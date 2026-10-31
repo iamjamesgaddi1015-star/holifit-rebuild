@@ -1,0 +1,419 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 28,
+  "totalBatches": 4,
+  "exportsByPath": {
+    "public/app.js": [],
+    "scripts/browser-check.cjs": [],
+    "scripts/build.mjs": [],
+    "scripts/check.mjs": [],
+    "scripts/reference-check.cjs": [],
+    "scripts/reference-pages.cjs": [],
+    "scripts/server-check.mjs": [],
+    "scripts/server.mjs": [
+      "server"
+    ],
+    "scripts/visual-review.cjs": [],
+    "src/brand.mjs": [
+      "logo",
+      "header",
+      "footer",
+      "contactBand"
+    ],
+    "src/components.mjs": [
+      "header",
+      "footer",
+      "contactBand",
+      "escape",
+      "button",
+      "media",
+      "faq",
+      "quotes",
+      "cta",
+      "form",
+      "shell"
+    ],
+    "src/content.mjs": [
+      "site",
+      "pageMedia",
+      "mediaLogos",
+      "services",
+      "navigation",
+      "clientLogos",
+      "faqs",
+      "testimonials",
+      "resources"
+    ],
+    "src/home.mjs": [
+      "home"
+    ],
+    "src/pages.mjs": [
+      "getPages"
+    ],
+    "src/reference-pages.mjs": [
+      "referenceBody"
+    ]
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "src/brand.mjs",
+          "language": "javascript",
+          "sizeLines": 6,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components.mjs",
+          "language": "javascript",
+          "sizeLines": 13,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/content.mjs",
+          "language": "javascript",
+          "sizeLines": 53,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/home.mjs",
+          "language": "javascript",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/reference-pages.mjs",
+          "language": "javascript",
+          "sizeLines": 31,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/brand.mjs": [
+          "src/content.mjs"
+        ],
+        "src/components.mjs": [
+          "src/brand.mjs",
+          "src/content.mjs"
+        ],
+        "src/content.mjs": [],
+        "src/home.mjs": [
+          "src/components.mjs",
+          "src/content.mjs"
+        ],
+        "src/reference-pages.mjs": [
+          "src/components.mjs",
+          "src/content.mjs"
+        ]
+      },
+      "neighborMap": {
+        "src/components.mjs": [
+          {
+            "path": "src/pages.mjs",
+            "batchIndex": 2,
+            "symbols": [
+              "getPages"
+            ]
+          }
+        ],
+        "src/content.mjs": [
+          {
+            "path": "scripts/check.mjs",
+            "batchIndex": 2,
+            "symbols": []
+          },
+          {
+            "path": "src/pages.mjs",
+            "batchIndex": 2,
+            "symbols": [
+              "getPages"
+            ]
+          }
+        ],
+        "src/home.mjs": [
+          {
+            "path": "src/pages.mjs",
+            "batchIndex": 2,
+            "symbols": [
+              "getPages"
+            ]
+          }
+        ],
+        "src/reference-pages.mjs": [
+          {
+            "path": "src/pages.mjs",
+            "batchIndex": 2,
+            "symbols": [
+              "getPages"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "scripts/build.mjs",
+          "language": "javascript",
+          "sizeLines": 14,
+          "fileCategory": "code"
+        },
+        {
+          "path": "scripts/check.mjs",
+          "language": "javascript",
+          "sizeLines": 19,
+          "fileCategory": "code"
+        },
+        {
+          "path": "scripts/server.mjs",
+          "language": "javascript",
+          "sizeLines": 40,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/pages.mjs",
+          "language": "javascript",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "scripts/build.mjs": [
+          "src/pages.mjs"
+        ],
+        "scripts/check.mjs": [
+          "src/content.mjs",
+          "src/pages.mjs"
+        ],
+        "scripts/server.mjs": [
+          "scripts/build.mjs"
+        ],
+        "src/pages.mjs": [
+          "src/components.mjs",
+          "src/content.mjs",
+          "src/home.mjs",
+          "src/reference-pages.mjs"
+        ]
+      },
+      "neighborMap": {
+        "scripts/check.mjs": [
+          {
+            "path": "src/content.mjs",
+            "batchIndex": 1,
+            "symbols": [
+              "site",
+              "pageMedia",
+              "mediaLogos",
+              "services",
+              "navigation",
+              "clientLogos",
+              "faqs",
+              "testimonials",
+              "resources"
+            ]
+          }
+        ],
+        "src/pages.mjs": [
+          {
+            "path": "src/components.mjs",
+            "batchIndex": 1,
+            "symbols": [
+              "header",
+              "footer",
+              "contactBand",
+              "escape",
+              "button",
+              "media",
+              "faq",
+              "quotes",
+              "cta",
+              "form",
+              "shell"
+            ]
+          },
+          {
+            "path": "src/content.mjs",
+            "batchIndex": 1,
+            "symbols": [
+              "site",
+              "pageMedia",
+              "mediaLogos",
+              "services",
+              "navigation",
+              "clientLogos",
+              "faqs",
+              "testimonials",
+              "resources"
+            ]
+          },
+          {
+            "path": "src/home.mjs",
+            "batchIndex": 1,
+            "symbols": [
+              "home"
+            ]
+          },
+          {
+            "path": "src/reference-pages.mjs",
+            "batchIndex": 1,
+            "symbols": [
+              "referenceBody"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": "DESIGN.md",
+          "language": "markdown",
+          "sizeLines": 52,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "MEDIA-GUIDE.md",
+          "language": "markdown",
+          "sizeLines": 29,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 111,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "REVIEW.md",
+          "language": "markdown",
+          "sizeLines": 39,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "Start Holifit.cmd",
+          "language": "batch",
+          "sizeLines": 7,
+          "fileCategory": "script"
+        },
+        {
+          "path": "TASKS.md",
+          "language": "markdown",
+          "sizeLines": 32,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "UX-CONTRACT.md",
+          "language": "markdown",
+          "sizeLines": 18,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "package.json",
+          "language": "json",
+          "sizeLines": 12,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "DESIGN.md": [],
+        "MEDIA-GUIDE.md": [],
+        "README.md": [],
+        "REVIEW.md": [],
+        "Start Holifit.cmd": [],
+        "TASKS.md": [],
+        "UX-CONTRACT.md": [],
+        "package.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 4,
+      "files": [
+        {
+          "path": "public/app.js",
+          "language": "javascript",
+          "sizeLines": 57,
+          "fileCategory": "code"
+        },
+        {
+          "path": "public/fonts/Oswald-OFL.txt",
+          "language": "txt",
+          "sizeLines": 93,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "public/fonts/Poppins-OFL.txt",
+          "language": "txt",
+          "sizeLines": 93,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "public/media/README.md",
+          "language": "markdown",
+          "sizeLines": 8,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "public/reference.css",
+          "language": "css",
+          "sizeLines": 92,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "public/styles.css",
+          "language": "css",
+          "sizeLines": 12,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "scripts/browser-check.cjs",
+          "language": "javascript",
+          "sizeLines": 68,
+          "fileCategory": "code"
+        },
+        {
+          "path": "scripts/reference-check.cjs",
+          "language": "javascript",
+          "sizeLines": 23,
+          "fileCategory": "code"
+        },
+        {
+          "path": "scripts/reference-pages.cjs",
+          "language": "javascript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": "scripts/server-check.mjs",
+          "language": "javascript",
+          "sizeLines": 16,
+          "fileCategory": "code"
+        },
+        {
+          "path": "scripts/visual-review.cjs",
+          "language": "javascript",
+          "sizeLines": 4,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "public/app.js": [],
+        "public/fonts/Oswald-OFL.txt": [],
+        "public/fonts/Poppins-OFL.txt": [],
+        "public/media/README.md": [],
+        "public/reference.css": [],
+        "public/styles.css": [],
+        "scripts/browser-check.cjs": [],
+        "scripts/reference-check.cjs": [],
+        "scripts/reference-pages.cjs": [],
+        "scripts/server-check.mjs": [],
+        "scripts/visual-review.cjs": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

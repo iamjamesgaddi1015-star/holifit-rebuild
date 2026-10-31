@@ -1,0 +1,62 @@
+{
+  "scriptCompleted": true,
+  "stats": {
+    "filesScanned": 28,
+    "filesWithImports": 8,
+    "totalEdges": 15
+  },
+  "failures": [],
+  "importMap": {
+    "DESIGN.md": [],
+    "MEDIA-GUIDE.md": [],
+    "README.md": [],
+    "REVIEW.md": [],
+    "Start Holifit.cmd": [],
+    "TASKS.md": [],
+    "UX-CONTRACT.md": [],
+    "package.json": [],
+    "public/app.js": [],
+    "public/fonts/Oswald-OFL.txt": [],
+    "public/fonts/Poppins-OFL.txt": [],
+    "public/media/README.md": [],
+    "public/reference.css": [],
+    "public/styles.css": [],
+    "scripts/browser-check.cjs": [],
+    "scripts/build.mjs": [
+      "src/pages.mjs"
+    ],
+    "scripts/check.mjs": [
+      "src/content.mjs",
+      "src/pages.mjs"
+    ],
+    "scripts/reference-check.cjs": [],
+    "scripts/reference-pages.cjs": [],
+    "scripts/server-check.mjs": [],
+    "scripts/server.mjs": [
+      "scripts/build.mjs"
+    ],
+    "scripts/visual-review.cjs": [],
+    "src/brand.mjs": [
+      "src/content.mjs"
+    ],
+    "src/components.mjs": [
+      "src/brand.mjs",
+      "src/content.mjs"
+    ],
+    "src/content.mjs": [],
+    "src/home.mjs": [
+      "src/components.mjs",
+      "src/content.mjs"
+    ],
+    "src/pages.mjs": [
+      "src/components.mjs",
+      "src/content.mjs",
+      "src/home.mjs",
+      "src/reference-pages.mjs"
+    ],
+    "src/reference-pages.mjs": [
+      "src/components.mjs",
+      "src/content.mjs"
+    ]
+  }
+}

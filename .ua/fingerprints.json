@@ -1,0 +1,715 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "58edcbf1f68433b51d5a8e3e3a7a31b288e39470",
+  "generatedAt": "2026-10-29T08:08:36.518Z",
+  "files": {
+    "DESIGN.md": {
+      "filePath": "DESIGN.md",
+      "contentHash": "5c6756f54169a13ebe11b3b2b9a1bd25693b82b853705364e78a13aa568eb880",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 53,
+      "hasStructuralAnalysis": false
+    },
+    "MEDIA-GUIDE.md": {
+      "filePath": "MEDIA-GUIDE.md",
+      "contentHash": "162d752a07b59182a9c8864d8687215f0bafa56dfe0ad583948ee0a6e7087894",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 30,
+      "hasStructuralAnalysis": false
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "abeb223d293e77e723cdbaf0ede524ece6302b4db514794a9cc3cfd045f10d58",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 112,
+      "hasStructuralAnalysis": false
+    },
+    "REVIEW.md": {
+      "filePath": "REVIEW.md",
+      "contentHash": "8ac45fd499eff712ec98ff049d95abd9c3701dc3e393d7c24a8dc5b43b8d315c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 40,
+      "hasStructuralAnalysis": false
+    },
+    "Start Holifit.cmd": {
+      "filePath": "Start Holifit.cmd",
+      "contentHash": "6c6738e7d2bf143791f083216bdfca0a70b930424ab950a1ac2b3e8dfb52b9fa",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": false
+    },
+    "TASKS.md": {
+      "filePath": "TASKS.md",
+      "contentHash": "30ac843fe04afb26a1c67adaa2dc54270da9bff6ed2954df3ecfeb18b71c906b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 33,
+      "hasStructuralAnalysis": false
+    },
+    "UX-CONTRACT.md": {
+      "filePath": "UX-CONTRACT.md",
+      "contentHash": "c1a0bd8236bc859cb2b3f423696cda9d4717083900d32c6cc5bf62c97cac51ff",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 19,
+      "hasStructuralAnalysis": false
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "contentHash": "06169c26a45be674235fff4f04cfcda369c471545b8dd5bc3bcd6ff68bf878fb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": false
+    },
+    "public/app.js": {
+      "filePath": "public/app.js",
+      "contentHash": "c73990460054c0b5ca8cdda310be9b92de95af781cd4a12b3e4a2c4a655a2cf9",
+      "functions": [
+        {
+          "name": "closeServices",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "closeNav",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 58,
+      "hasStructuralAnalysis": true
+    },
+    "public/fonts/Oswald-OFL.txt": {
+      "filePath": "public/fonts/Oswald-OFL.txt",
+      "contentHash": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 94,
+      "hasStructuralAnalysis": false
+    },
+    "public/fonts/Poppins-OFL.txt": {
+      "filePath": "public/fonts/Poppins-OFL.txt",
+      "contentHash": "6be04893d770899a015649c7aa3b582f871b272f8747a92b78b17c3e5c8b2573",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 94,
+      "hasStructuralAnalysis": false
+    },
+    "public/media/README.md": {
+      "filePath": "public/media/README.md",
+      "contentHash": "a31e0bdc5c1473eed6ce5553b75a7ff79842c490cc63b02404959287fc49bfac",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": false
+    },
+    "public/reference.css": {
+      "filePath": "public/reference.css",
+      "contentHash": "f3da2bbca372f99b8b3c48ac029de5f800afd4343d58bb14283dae303c7470bc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 93,
+      "hasStructuralAnalysis": false
+    },
+    "public/styles.css": {
+      "filePath": "public/styles.css",
+      "contentHash": "69e3f243a615dd4dc6e547c310bbf7d15b58ab8dc16049cf60758d24935df92d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": false
+    },
+    "scripts/browser-check.cjs": {
+      "filePath": "scripts/browser-check.cjs",
+      "contentHash": "b3193ef8526116bb6bc5b57432800fb109d3747b00dbec8ea64df4f755735fb8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 69,
+      "hasStructuralAnalysis": true
+    },
+    "scripts/build.mjs": {
+      "filePath": "scripts/build.mjs",
+      "contentHash": "c4f02becf5fbe13b65ad0d8356bb47b21d665dd6ee4984fbe253a100dbccf803",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "node:fs/promises",
+          "specifiers": [
+            "mkdir",
+            "cp",
+            "writeFile"
+          ]
+        },
+        {
+          "source": "node:url",
+          "specifiers": [
+            "fileURLToPath"
+          ]
+        },
+        {
+          "source": "../src/pages.mjs",
+          "specifiers": [
+            "getPages"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "scripts/check.mjs": {
+      "filePath": "scripts/check.mjs",
+      "contentHash": "4c1ab2914b156b01a79eb62079f6c5ff8057ba1e4785c1365b2c915a16b983f9",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "node:assert/strict",
+          "specifiers": [
+            "assert"
+          ]
+        },
+        {
+          "source": "node:fs/promises",
+          "specifiers": [
+            "access"
+          ]
+        },
+        {
+          "source": "../src/pages.mjs",
+          "specifiers": [
+            "getPages"
+          ]
+        },
+        {
+          "source": "../src/content.mjs",
+          "specifiers": [
+            "site",
+            "services"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 20,
+      "hasStructuralAnalysis": true
+    },
+    "scripts/reference-check.cjs": {
+      "filePath": "scripts/reference-check.cjs",
+      "contentHash": "a7a8bfd1a5673b841807f7974174191e3992d4264dbc697acce6ab0963d738ac",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "scripts/reference-pages.cjs": {
+      "filePath": "scripts/reference-pages.cjs",
+      "contentHash": "b5c7fc4b1c7a44224a896949e3a5906d72169c9717dabc2409f3f9d7b06e4862",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "scripts/server-check.mjs": {
+      "filePath": "scripts/server-check.mjs",
+      "contentHash": "66f8c44de13cfd94769ea69d1a84391e1d7dbc5b538440ae3e1c0e607031949a",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "node:http",
+          "specifiers": [
+            "createServer"
+          ]
+        },
+        {
+          "source": "node:events",
+          "specifiers": [
+            "once"
+          ]
+        },
+        {
+          "source": "node:assert/strict",
+          "specifiers": [
+            "assert"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "scripts/server.mjs": {
+      "filePath": "scripts/server.mjs",
+      "contentHash": "270ef75d3fe7cfec16896c892acfa67fdf1787c8014da98c51de7cf8caeddb46",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "node:http",
+          "specifiers": [
+            "createServer"
+          ]
+        },
+        {
+          "source": "node:fs/promises",
+          "specifiers": [
+            "readFile",
+            "stat"
+          ]
+        },
+        {
+          "source": "node:path",
+          "specifiers": [
+            "resolve",
+            "extname",
+            "sep"
+          ]
+        },
+        {
+          "source": "node:url",
+          "specifiers": [
+            "fileURLToPath"
+          ]
+        },
+        {
+          "source": "./build.mjs",
+          "specifiers": []
+        }
+      ],
+      "exports": [
+        "server"
+      ],
+      "totalLines": 41,
+      "hasStructuralAnalysis": true
+    },
+    "scripts/visual-review.cjs": {
+      "filePath": "scripts/visual-review.cjs",
+      "contentHash": "927b241aac8bf69d84dab393a76a9b323f1eaacd94be3e57085e3e30a66c830d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5,
+      "hasStructuralAnalysis": true
+    },
+    "src/brand.mjs": {
+      "filePath": "src/brand.mjs",
+      "contentHash": "38791390c79b23ffc04d5cbb2f6de1038203a276aa4b496f9297d9a4ac96c51e",
+      "functions": [
+        {
+          "name": "e",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "logo",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "header",
+          "params": [
+            "path"
+          ],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "footer",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "contactBand",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./content.mjs",
+          "specifiers": [
+            "site",
+            "services",
+            "navigation"
+          ]
+        }
+      ],
+      "exports": [
+        "logo",
+        "header",
+        "footer",
+        "contactBand"
+      ],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "src/components.mjs": {
+      "filePath": "src/components.mjs",
+      "contentHash": "66b7e365e1834829734a3b59f9a295e5abeec13061bc01e73ac7ac1ea6553973",
+      "functions": [
+        {
+          "name": "escape",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "button",
+          "params": [
+            "label"
+          ],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "media",
+          "params": [
+            "item"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "faq",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "quotes",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "cta",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "form",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "shell",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./brand.mjs",
+          "specifiers": [
+            "header",
+            "footer",
+            "contactBand"
+          ]
+        },
+        {
+          "source": "./content.mjs",
+          "specifiers": [
+            "site",
+            "services",
+            "navigation",
+            "faqs",
+            "testimonials"
+          ]
+        }
+      ],
+      "exports": [
+        "header",
+        "footer",
+        "contactBand",
+        "escape",
+        "button",
+        "media",
+        "faq",
+        "quotes",
+        "cta",
+        "form",
+        "shell"
+      ],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "src/content.mjs": {
+      "filePath": "src/content.mjs",
+      "contentHash": "d625c5908b2d4dca736bd490ee6b00dbe9d9ebb1a48fa3fd0312dbfb79aefb89",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "site",
+        "pageMedia",
+        "mediaLogos",
+        "services",
+        "navigation",
+        "clientLogos",
+        "faqs",
+        "testimonials",
+        "resources"
+      ],
+      "totalLines": 54,
+      "hasStructuralAnalysis": true
+    },
+    "src/home.mjs": {
+      "filePath": "src/home.mjs",
+      "contentHash": "b587926de80b30870f9e4d5d6c8d24a065077adcaa3dd63aa5f4164c36d25c69",
+      "functions": [
+        {
+          "name": "tile",
+          "params": [
+            "i"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "partner",
+          "params": [
+            "name",
+            "i"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "home",
+          "params": [],
+          "exported": true,
+          "lineCount": 15
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./content.mjs",
+          "specifiers": [
+            "site",
+            "services",
+            "clientLogos",
+            "testimonials",
+            "mediaLogos"
+          ]
+        },
+        {
+          "source": "./components.mjs",
+          "specifiers": [
+            "escape",
+            "button",
+            "media",
+            "contactBand"
+          ]
+        }
+      ],
+      "exports": [
+        "home"
+      ],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "src/pages.mjs": {
+      "filePath": "src/pages.mjs",
+      "contentHash": "c43323c68838d86db4386b55c2032fdfcd2ab16ebd0b0f8039fc78040d8964a7",
+      "functions": [
+        {
+          "name": "intro",
+          "params": [
+            "eyebrow",
+            "title",
+            "description"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "serviceCard",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "getPages",
+          "params": [],
+          "exported": true,
+          "lineCount": 15
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./reference-pages.mjs",
+          "specifiers": [
+            "referenceBody"
+          ]
+        },
+        {
+          "source": "./content.mjs",
+          "specifiers": [
+            "site",
+            "services",
+            "resources",
+            "clientLogos"
+          ]
+        },
+        {
+          "source": "./components.mjs",
+          "specifiers": [
+            "escape",
+            "button",
+            "media",
+            "faq",
+            "quotes",
+            "contactBand",
+            "cta",
+            "form",
+            "shell"
+          ]
+        },
+        {
+          "source": "./home.mjs",
+          "specifiers": [
+            "home"
+          ]
+        }
+      ],
+      "exports": [
+        "getPages"
+      ],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "src/reference-pages.mjs": {
+      "filePath": "src/reference-pages.mjs",
+      "contentHash": "3447df156e77477000b1813004eb639d6ae32d68dfc01962c6fbe4a652e9e2bb",
+      "functions": [
+        {
+          "name": "hero",
+          "params": [
+            "title"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "catalog",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "video",
+          "params": [
+            "title"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "clients",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "referenceBody",
+          "params": [
+            "page"
+          ],
+          "exported": true,
+          "lineCount": 11
+        },
+        {
+          "name": "calculatorPage",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./content.mjs",
+          "specifiers": [
+            "site",
+            "services",
+            "clientLogos",
+            "pageMedia"
+          ]
+        },
+        {
+          "source": "./components.mjs",
+          "specifiers": [
+            "escape",
+            "button",
+            "media",
+            "form",
+            "faq",
+            "quotes",
+            "contactBand"
+          ]
+        }
+      ],
+      "exports": [
+        "referenceBody"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    }
+  }
+}

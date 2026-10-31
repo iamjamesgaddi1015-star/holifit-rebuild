@@ -1,0 +1,72 @@
+[
+  {
+    "id": "layer:content",
+    "name": "Content and media",
+    "description": "Editable business records, contact destinations and local media configuration.",
+    "nodeIds": [
+      "file:src/content.mjs"
+    ]
+  },
+  {
+    "id": "layer:application",
+    "name": "Page and browser behavior",
+    "description": "Page composition, shared components, dialogs and client-side interactions.",
+    "nodeIds": [
+      "file:public/app.js",
+      "file:src/brand.mjs",
+      "file:src/components.mjs",
+      "file:src/home.mjs",
+      "file:src/pages.mjs",
+      "file:src/reference-pages.mjs"
+    ]
+  },
+  {
+    "id": "layer:presentation",
+    "name": "Visual system",
+    "description": "Base and refinement stylesheets, local fonts and document markup.",
+    "nodeIds": [
+      "document:public/fonts/Oswald-OFL.txt",
+      "document:public/fonts/Poppins-OFL.txt",
+      "file:public/reference.css",
+      "file:public/styles.css"
+    ]
+  },
+  {
+    "id": "layer:tooling",
+    "name": "Build and local preview",
+    "description": "Existing-toolchain resolution, packaging, launchers and loopback-only preview server.",
+    "nodeIds": [
+      "file:Start Holifit.cmd",
+      "file:scripts/build.mjs",
+      "file:scripts/server.mjs"
+    ]
+  },
+  {
+    "id": "layer:verification",
+    "name": "Checks and reference evidence",
+    "description": "Local test scripts, reference-capture utilities and historical review evidence.",
+    "nodeIds": [
+      "file:scripts/browser-check.cjs",
+      "file:scripts/check.mjs",
+      "file:scripts/reference-check.cjs",
+      "file:scripts/reference-pages.cjs",
+      "file:scripts/server-check.mjs",
+      "file:scripts/visual-review.cjs"
+    ]
+  },
+  {
+    "id": "layer:documentation",
+    "name": "Project guidance",
+    "description": "Overview, design/UX contracts, edit instructions, package/compiler configuration and task history.",
+    "nodeIds": [
+      "document:DESIGN.md",
+      "document:MEDIA-GUIDE.md",
+      "document:README.md",
+      "document:REVIEW.md",
+      "document:TASKS.md",
+      "document:UX-CONTRACT.md",
+      "config:package.json",
+      "document:public/media/README.md"
+    ]
+  }
+]

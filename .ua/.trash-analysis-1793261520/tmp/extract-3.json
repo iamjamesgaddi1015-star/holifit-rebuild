@@ -1,0 +1,293 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 7,
+  "filesSkipped": [
+    "Start Holifit.cmd"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 7,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 7
+    }
+  },
+  "results": [
+    {
+      "path": "DESIGN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 52,
+      "nonEmptyLines": 45,
+      "sections": [
+        {
+          "heading": "HoliFit website design",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose and register",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Visual direction",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Token ownership",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Responsive and behavior",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Content and future changes",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Verification",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Applied skills and intentional exceptions",
+          "level": 2,
+          "line": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "MEDIA-GUIDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 29,
+      "nonEmptyLines": 22,
+      "sections": [
+        {
+          "heading": "Replacing the temporary media",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 111,
+      "nonEmptyLines": 81,
+      "sections": [
+        {
+          "heading": "HoliFit recreation",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Run locally",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Where to edit",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Replace a placeholder",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "Add a service or page",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Integrations",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Architecture and scaling",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "Browser verification",
+          "level": 2,
+          "line": 94
+        },
+        {
+          "heading": "Rollback",
+          "level": 2,
+          "line": 107
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "REVIEW.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 39,
+      "nonEmptyLines": 27,
+      "sections": [
+        {
+          "heading": "Holifit local rebuild review — 2026-10-29",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Implemented",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Evidence",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Fidelity boundaries",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Operation and rollback",
+          "level": 2,
+          "line": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "TASKS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 32,
+      "nonEmptyLines": 27,
+      "sections": [
+        {
+          "heading": "Outcomes",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Reference-led revamp, 2026-10-29",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Before launch",
+          "level": 1,
+          "line": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "UX-CONTRACT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 18,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "Shared UI behavior",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 12,
+      "nonEmptyLines": 12,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "private",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "type",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "engines",
+          "level": 1,
+          "line": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    }
+  ]
+}

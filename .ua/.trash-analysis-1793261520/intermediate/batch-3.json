@@ -1,0 +1,208 @@
+{
+  "nodes": [
+    {
+      "id": "document:DESIGN.md",
+      "type": "document",
+      "name": "DESIGN.md",
+      "filePath": "DESIGN.md",
+      "summary": "Records brand direction, typography, colors, layout and accessibility decisions that guide the rendered site.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:MEDIA-GUIDE.md",
+      "type": "document",
+      "name": "MEDIA-GUIDE.md",
+      "filePath": "MEDIA-GUIDE.md",
+      "summary": "Explains replaceable local image/video slots, file locations, recommended dimensions and rebuild steps.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Explains local startup, editable source boundaries, integration limitations, verification commands and recovery.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:REVIEW.md",
+      "type": "document",
+      "name": "REVIEW.md",
+      "filePath": "REVIEW.md",
+      "summary": "Records historical local validation and unresolved content, legal/media and release limitations.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Start Holifit.cmd",
+      "type": "file",
+      "name": "Start Holifit.cmd",
+      "filePath": "Start Holifit.cmd",
+      "summary": "Starts the Node-based Holifit preview from the project directory.",
+      "tags": [
+        "script",
+        "batch",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:TASKS.md",
+      "type": "document",
+      "name": "TASKS.md",
+      "filePath": "TASKS.md",
+      "summary": "Records task history, completed changes and remaining limitations; these historical checks are not rerun by this analysis.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:UX-CONTRACT.md",
+      "type": "document",
+      "name": "UX-CONTRACT.md",
+      "filePath": "UX-CONTRACT.md",
+      "summary": "Defines canonical owners and consistent navigation, form, feedback, media and accessibility behavior.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Defines Node runtime requirements and the documented startup/build/check commands; no application execution is performed here.",
+      "tags": [
+        "config",
+        "json",
+        "project-context"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:DESIGN.md",
+      "target": "file:public/reference.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:MEDIA-GUIDE.md",
+      "target": "file:src/content.mjs",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:REVIEW.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:TASKS.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/browser-check.cjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/build.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/check.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/reference-check.cjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/reference-pages.cjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/server-check.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/server.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/visual-review.cjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

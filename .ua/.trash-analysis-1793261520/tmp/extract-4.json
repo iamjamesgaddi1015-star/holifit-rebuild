@@ -1,0 +1,182 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 7,
+  "filesSkipped": [
+    "public/fonts/Oswald-OFL.txt",
+    "public/fonts/Poppins-OFL.txt",
+    "public/reference.css",
+    "public/styles.css"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 7,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 6,
+      "failed": 0,
+      "skipped": 1
+    }
+  },
+  "results": [
+    {
+      "path": "public/app.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 57,
+      "functions": [
+        {
+          "name": "closeServices",
+          "startLine": 32,
+          "endLine": 32,
+          "params": []
+        },
+        {
+          "name": "closeNav",
+          "startLine": 33,
+          "endLine": 33,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "closeServices",
+          "callee": "servicesButton.setAttribute",
+          "lineNumber": 32
+        },
+        {
+          "caller": "closeNav",
+          "callee": "menuButton.setAttribute",
+          "lineNumber": 33
+        },
+        {
+          "caller": "closeNav",
+          "callee": "nav.classList.remove",
+          "lineNumber": 33
+        },
+        {
+          "caller": "closeNav",
+          "callee": "closeServices",
+          "lineNumber": 33
+        },
+        {
+          "caller": "sync",
+          "callee": "videoToggle.setAttribute",
+          "lineNumber": 43
+        },
+        {
+          "caller": "sync",
+          "callee": "String",
+          "lineNumber": 43
+        },
+        {
+          "caller": "validate",
+          "callee": "field.value.trim",
+          "lineNumber": 48
+        },
+        {
+          "caller": "validate",
+          "callee": "field.setAttribute",
+          "lineNumber": 48
+        },
+        {
+          "caller": "validate",
+          "callee": "String",
+          "lineNumber": 48
+        },
+        {
+          "caller": "validate",
+          "callee": "document.getElementById",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "public/media/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "scripts/browser-check.cjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 68,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/reference-check.cjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 23,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/reference-pages.cjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/server-check.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/visual-review.cjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

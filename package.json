@@ -1,0 +1,12 @@
+{
+  "name": "holifit-rebuild",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/server.mjs",
+    "start": "node scripts/server.mjs",
+    "check": "node --check src/components.mjs && node --check src/brand.mjs && node --check src/home.mjs && node --check src/reference-pages.mjs && node --check src/pages.mjs && node --check public/app.js && node scripts/check.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

@@ -1,0 +1,692 @@
+{
+  "scriptCompleted": true,
+  "groups": {
+    "root": [
+      "document:DESIGN.md",
+      "document:MEDIA-GUIDE.md",
+      "document:README.md",
+      "document:REVIEW.md",
+      "file:Start Holifit.cmd",
+      "document:TASKS.md",
+      "document:UX-CONTRACT.md",
+      "config:package.json"
+    ],
+    "public": [
+      "file:public/app.js",
+      "document:public/fonts/Oswald-OFL.txt",
+      "document:public/fonts/Poppins-OFL.txt",
+      "document:public/media/README.md",
+      "file:public/reference.css",
+      "file:public/styles.css"
+    ],
+    "scripts": [
+      "file:scripts/browser-check.cjs",
+      "file:scripts/build.mjs",
+      "file:scripts/check.mjs",
+      "file:scripts/reference-check.cjs",
+      "file:scripts/reference-pages.cjs",
+      "file:scripts/server-check.mjs",
+      "file:scripts/server.mjs",
+      "file:scripts/visual-review.cjs"
+    ],
+    "src": [
+      "file:src/brand.mjs",
+      "file:src/components.mjs",
+      "file:src/content.mjs",
+      "file:src/home.mjs",
+      "file:src/pages.mjs",
+      "file:src/reference-pages.mjs"
+    ]
+  },
+  "byType": {
+    "document": [
+      "document:DESIGN.md",
+      "document:MEDIA-GUIDE.md",
+      "document:README.md",
+      "document:REVIEW.md",
+      "document:TASKS.md",
+      "document:UX-CONTRACT.md",
+      "document:public/fonts/Oswald-OFL.txt",
+      "document:public/fonts/Poppins-OFL.txt",
+      "document:public/media/README.md"
+    ],
+    "file": [
+      "file:Start Holifit.cmd",
+      "file:public/app.js",
+      "file:public/reference.css",
+      "file:public/styles.css",
+      "file:scripts/browser-check.cjs",
+      "file:scripts/build.mjs",
+      "file:scripts/check.mjs",
+      "file:scripts/reference-check.cjs",
+      "file:scripts/reference-pages.cjs",
+      "file:scripts/server-check.mjs",
+      "file:scripts/server.mjs",
+      "file:scripts/visual-review.cjs",
+      "file:src/brand.mjs",
+      "file:src/components.mjs",
+      "file:src/content.mjs",
+      "file:src/home.mjs",
+      "file:src/pages.mjs",
+      "file:src/reference-pages.mjs"
+    ],
+    "config": [
+      "config:package.json"
+    ]
+  },
+  "adjacency": {
+    "document:DESIGN.md": [],
+    "document:MEDIA-GUIDE.md": [],
+    "document:README.md": [],
+    "document:REVIEW.md": [],
+    "file:Start Holifit.cmd": [],
+    "document:TASKS.md": [],
+    "document:UX-CONTRACT.md": [],
+    "config:package.json": [],
+    "file:public/app.js": [],
+    "document:public/fonts/Oswald-OFL.txt": [],
+    "document:public/fonts/Poppins-OFL.txt": [],
+    "document:public/media/README.md": [],
+    "file:public/reference.css": [],
+    "file:public/styles.css": [],
+    "file:scripts/browser-check.cjs": [],
+    "file:scripts/build.mjs": [
+      "src/pages.mjs"
+    ],
+    "file:scripts/check.mjs": [
+      "src/content.mjs",
+      "src/pages.mjs"
+    ],
+    "file:scripts/reference-check.cjs": [],
+    "file:scripts/reference-pages.cjs": [],
+    "file:scripts/server-check.mjs": [],
+    "file:scripts/server.mjs": [
+      "scripts/build.mjs"
+    ],
+    "file:scripts/visual-review.cjs": [],
+    "file:src/brand.mjs": [
+      "src/content.mjs"
+    ],
+    "file:src/components.mjs": [
+      "src/brand.mjs",
+      "src/content.mjs"
+    ],
+    "file:src/content.mjs": [],
+    "file:src/home.mjs": [
+      "src/components.mjs",
+      "src/content.mjs"
+    ],
+    "file:src/pages.mjs": [
+      "src/components.mjs",
+      "src/content.mjs",
+      "src/home.mjs",
+      "src/reference-pages.mjs"
+    ],
+    "file:src/reference-pages.mjs": [
+      "src/components.mjs",
+      "src/content.mjs"
+    ]
+  },
+  "crossCategory": {
+    "file->file:imports": 15,
+    "file->function:contains": 15,
+    "file->function:exports": 15,
+    "function->function:calls": 9,
+    "document->file:documents": 2,
+    "document->config:documents": 5,
+    "config->file:configures": 8
+  },
+  "interGroup": {
+    "src->src": 11,
+    "scripts->src": 3,
+    "scripts->scripts": 1
+  },
+  "density": {
+    "src": {
+      "internal": 11,
+      "total": 11
+    },
+    "scripts": {
+      "internal": 1,
+      "total": 4
+    }
+  },
+  "fanInRanking": [
+    [
+      "function:src/components.mjs:escape",
+      8
+    ],
+    [
+      "file:src/content.mjs",
+      7
+    ],
+    [
+      "config:package.json",
+      5
+    ],
+    [
+      "function:src/components.mjs:button",
+      4
+    ],
+    [
+      "function:src/brand.mjs:logo",
+      3
+    ],
+    [
+      "file:src/components.mjs",
+      3
+    ],
+    [
+      "function:src/brand.mjs:header",
+      2
+    ],
+    [
+      "function:src/brand.mjs:footer",
+      2
+    ],
+    [
+      "function:src/brand.mjs:contactBand",
+      2
+    ],
+    [
+      "function:src/components.mjs:media",
+      2
+    ],
+    [
+      "function:src/components.mjs:faq",
+      2
+    ],
+    [
+      "function:src/components.mjs:quotes",
+      2
+    ],
+    [
+      "function:src/components.mjs:cta",
+      2
+    ],
+    [
+      "function:src/components.mjs:form",
+      2
+    ],
+    [
+      "function:src/components.mjs:shell",
+      2
+    ],
+    [
+      "function:src/home.mjs:home",
+      2
+    ],
+    [
+      "function:src/reference-pages.mjs:referenceBody",
+      2
+    ],
+    [
+      "file:src/pages.mjs",
+      2
+    ],
+    [
+      "file:scripts/build.mjs",
+      2
+    ],
+    [
+      "function:src/pages.mjs:getPages",
+      2
+    ]
+  ],
+  "fanOutRanking": [
+    [
+      "file:src/components.mjs",
+      18
+    ],
+    [
+      "file:src/brand.mjs",
+      9
+    ],
+    [
+      "config:package.json",
+      8
+    ],
+    [
+      "file:src/pages.mjs",
+      6
+    ],
+    [
+      "file:src/home.mjs",
+      4
+    ],
+    [
+      "file:src/reference-pages.mjs",
+      4
+    ],
+    [
+      "function:src/components.mjs:faq",
+      2
+    ],
+    [
+      "file:scripts/check.mjs",
+      2
+    ],
+    [
+      "function:src/brand.mjs:header",
+      1
+    ],
+    [
+      "function:src/components.mjs:button",
+      1
+    ],
+    [
+      "function:src/components.mjs:media",
+      1
+    ],
+    [
+      "function:src/components.mjs:quotes",
+      1
+    ],
+    [
+      "function:src/components.mjs:cta",
+      1
+    ],
+    [
+      "function:src/components.mjs:form",
+      1
+    ],
+    [
+      "function:src/components.mjs:shell",
+      1
+    ],
+    [
+      "file:scripts/build.mjs",
+      1
+    ],
+    [
+      "file:scripts/server.mjs",
+      1
+    ],
+    [
+      "document:DESIGN.md",
+      1
+    ],
+    [
+      "document:MEDIA-GUIDE.md",
+      1
+    ],
+    [
+      "document:README.md",
+      1
+    ]
+  ],
+  "bfsTraversal": {
+    "startNode": "file:src/pages.mjs",
+    "order": [
+      "file:src/pages.mjs",
+      "file:src/components.mjs",
+      "file:src/content.mjs",
+      "file:src/home.mjs",
+      "file:src/reference-pages.mjs",
+      "file:src/brand.mjs"
+    ],
+    "depthMap": {
+      "file:src/pages.mjs": 0,
+      "file:src/components.mjs": 1,
+      "file:src/content.mjs": 1,
+      "file:src/home.mjs": 1,
+      "file:src/reference-pages.mjs": 1,
+      "file:src/brand.mjs": 2
+    }
+  },
+  "entryPointCandidates": [
+    "document:README.md",
+    "file:src/pages.mjs",
+    "file:scripts/server.mjs"
+  ],
+  "nodeSummaryIndex": {
+    "file:src/brand.mjs": {
+      "summary": "Renders the shared logo, navigation, footer and contact/map band used throughout generated routes.",
+      "type": "file",
+      "name": "brand.mjs"
+    },
+    "function:src/brand.mjs:logo": {
+      "summary": "Renders the configured logo image or the honest SVG wordmark placeholder.",
+      "type": "function",
+      "name": "logo"
+    },
+    "function:src/brand.mjs:header": {
+      "summary": "Renders shared navigation with active-route state, services menu, resource disclosure and consultation link.",
+      "type": "function",
+      "name": "header"
+    },
+    "function:src/brand.mjs:footer": {
+      "summary": "Renders shared footer navigation and legal destinations.",
+      "type": "function",
+      "name": "footer"
+    },
+    "function:src/brand.mjs:contactBand": {
+      "summary": "Renders shared contact destinations and the schematic replaceable location map.",
+      "type": "function",
+      "name": "contactBand"
+    },
+    "file:src/components.mjs": {
+      "summary": "Provides escaped HTML primitives, media/FAQ/testimonial sections, the contact form contract and the complete document shell.",
+      "type": "file",
+      "name": "components.mjs"
+    },
+    "function:src/components.mjs:escape": {
+      "summary": "Escapes HTML-sensitive characters before inserting values into generated markup.",
+      "type": "function",
+      "name": "escape"
+    },
+    "function:src/components.mjs:button": {
+      "summary": "Renders an escaped anchor in primary or outline button styling.",
+      "type": "function",
+      "name": "button"
+    },
+    "function:src/components.mjs:media": {
+      "summary": "Renders a reserved-size local image or an explicitly labelled placeholder figure.",
+      "type": "function",
+      "name": "media"
+    },
+    "function:src/components.mjs:faq": {
+      "summary": "Renders content-driven FAQ disclosures.",
+      "type": "function",
+      "name": "faq"
+    },
+    "function:src/components.mjs:quotes": {
+      "summary": "Renders editable testimonial placeholders without asserting approved real endorsements.",
+      "type": "function",
+      "name": "quotes"
+    },
+    "function:src/components.mjs:cta": {
+      "summary": "Renders the shared consultation call-to-action.",
+      "type": "function",
+      "name": "cta"
+    },
+    "function:src/components.mjs:form": {
+      "summary": "Builds named inquiry inputs, inline error/status slots and disconnected-default endpoint/email attributes.",
+      "type": "function",
+      "name": "form"
+    },
+    "function:src/components.mjs:shell": {
+      "summary": "Wraps a page body with metadata, styles, browser script, shared header, main landmark and footer.",
+      "type": "function",
+      "name": "shell"
+    },
+    "file:src/content.mjs": {
+      "summary": "Exports shared site settings, service records, navigation, media slots, FAQs, testimonials and resource placeholders for build-time rendering.",
+      "type": "file",
+      "name": "content.mjs"
+    },
+    "file:src/home.mjs": {
+      "summary": "Renders the reference-led wellness homepage with service features, client placeholders, testimonials, FAQs and disconnected catalog form.",
+      "type": "file",
+      "name": "home.mjs"
+    },
+    "function:src/home.mjs:home": {
+      "summary": "Renders the reference-led homepage using the current service/content catalogue.",
+      "type": "function",
+      "name": "home"
+    },
+    "file:src/reference-pages.mjs": {
+      "summary": "Selects distinct secondary-page layouts and renders the adult BMR/TDEE calculator form and catalog sections.",
+      "type": "file",
+      "name": "reference-pages.mjs"
+    },
+    "function:src/reference-pages.mjs:referenceBody": {
+      "summary": "Chooses a specific reference layout by route slug and falls back to the page body when no override exists.",
+      "type": "function",
+      "name": "referenceBody"
+    },
+    "file:scripts/build.mjs": {
+      "summary": "Copies public assets and writes a directory index HTML file for each route plus a separate 404.html into dist.",
+      "type": "file",
+      "name": "build.mjs"
+    },
+    "file:scripts/check.mjs": {
+      "summary": "Asserts unique routes/slugs, one h1 and main landmark, valid internal links/media and the disconnected form endpoint default.",
+      "type": "file",
+      "name": "check.mjs"
+    },
+    "file:scripts/server.mjs": {
+      "summary": "Builds before serving dist on loopback port 4173 by default, contains traversal boundaries, serves true 404 responses and handles port collisions.",
+      "type": "file",
+      "name": "server.mjs"
+    },
+    "file:src/pages.mjs": {
+      "summary": "Builds the full page catalogue from service/content exports, selects reference layouts and wraps each route in the shared HTML shell.",
+      "type": "file",
+      "name": "pages.mjs"
+    },
+    "function:src/pages.mjs:getPages": {
+      "summary": "Creates route descriptors, adds service and editorial/resource/legal pages, applies referenceBody and returns complete HTML for each.",
+      "type": "function",
+      "name": "getPages"
+    },
+    "document:DESIGN.md": {
+      "summary": "Records brand direction, typography, colors, layout and accessibility decisions that guide the rendered site.",
+      "type": "document",
+      "name": "DESIGN.md"
+    },
+    "document:MEDIA-GUIDE.md": {
+      "summary": "Explains replaceable local image/video slots, file locations, recommended dimensions and rebuild steps.",
+      "type": "document",
+      "name": "MEDIA-GUIDE.md"
+    },
+    "document:README.md": {
+      "summary": "Explains local startup, editable source boundaries, integration limitations, verification commands and recovery.",
+      "type": "document",
+      "name": "README.md"
+    },
+    "document:REVIEW.md": {
+      "summary": "Records historical local validation and unresolved content, legal/media and release limitations.",
+      "type": "document",
+      "name": "REVIEW.md"
+    },
+    "file:Start Holifit.cmd": {
+      "summary": "Starts the Node-based Holifit preview from the project directory.",
+      "type": "file",
+      "name": "Start Holifit.cmd"
+    },
+    "document:TASKS.md": {
+      "summary": "Records task history, completed changes and remaining limitations; these historical checks are not rerun by this analysis.",
+      "type": "document",
+      "name": "TASKS.md"
+    },
+    "document:UX-CONTRACT.md": {
+      "summary": "Defines canonical owners and consistent navigation, form, feedback, media and accessibility behavior.",
+      "type": "document",
+      "name": "UX-CONTRACT.md"
+    },
+    "config:package.json": {
+      "summary": "Defines Node runtime requirements and the documented startup/build/check commands; no application execution is performed here.",
+      "type": "config",
+      "name": "package.json"
+    },
+    "file:public/app.js": {
+      "summary": "Adds browser-only navigation, disclosure dismissal, carousel/video controls, local energy calculations and validation with disconnected-default inquiries.",
+      "type": "file",
+      "name": "app.js"
+    },
+    "document:public/fonts/Oswald-OFL.txt": {
+      "summary": "Contains the bundled Oswald font license and redistribution terms.",
+      "type": "document",
+      "name": "Oswald-OFL.txt"
+    },
+    "document:public/fonts/Poppins-OFL.txt": {
+      "summary": "Contains the bundled Poppins font license and redistribution terms.",
+      "type": "document",
+      "name": "Poppins-OFL.txt"
+    },
+    "document:public/media/README.md": {
+      "summary": "Documents where licensed replacement media belongs and how browser URLs map to the public directory.",
+      "type": "document",
+      "name": "README.md"
+    },
+    "file:public/reference.css": {
+      "summary": "Applies reference-led typography and responsive homepage/secondary-page layouts above the base stylesheet.",
+      "type": "file",
+      "name": "reference.css"
+    },
+    "file:public/styles.css": {
+      "summary": "Supplies shared base design tokens, layouts, form controls, visible scrollbars and accessibility foundations.",
+      "type": "file",
+      "name": "styles.css"
+    },
+    "file:scripts/browser-check.cjs": {
+      "summary": "Uses installed Playwright for local route navigation, disclosure controls, calculator/form behavior and responsive screenshots.",
+      "type": "file",
+      "name": "browser-check.cjs"
+    },
+    "file:scripts/reference-check.cjs": {
+      "summary": "Inspects the public Holifit homepage with Playwright and saves reference observations; intentionally not executed here.",
+      "type": "file",
+      "name": "reference-check.cjs"
+    },
+    "file:scripts/reference-pages.cjs": {
+      "summary": "Captures public Holifit secondary-page screenshots and headings into artifacts; intentionally not executed here.",
+      "type": "file",
+      "name": "reference-pages.cjs"
+    },
+    "file:scripts/server-check.mjs": {
+      "summary": "Creates synthetic loopback servers to verify a busy unrelated port is preserved and preview moves to the next port.",
+      "type": "file",
+      "name": "server-check.mjs"
+    },
+    "file:scripts/visual-review.cjs": {
+      "summary": "Visits generated local routes across viewport widths and records screenshots, overflow findings and runtime errors.",
+      "type": "file",
+      "name": "visual-review.cjs"
+    }
+  },
+  "clusters": [],
+  "nonCodeInventory": [
+    {
+      "id": "document:DESIGN.md",
+      "type": "document",
+      "name": "DESIGN.md",
+      "filePath": "DESIGN.md",
+      "summary": "Records brand direction, typography, colors, layout and accessibility decisions that guide the rendered site.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:MEDIA-GUIDE.md",
+      "type": "document",
+      "name": "MEDIA-GUIDE.md",
+      "filePath": "MEDIA-GUIDE.md",
+      "summary": "Explains replaceable local image/video slots, file locations, recommended dimensions and rebuild steps.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Explains local startup, editable source boundaries, integration limitations, verification commands and recovery.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:REVIEW.md",
+      "type": "document",
+      "name": "REVIEW.md",
+      "filePath": "REVIEW.md",
+      "summary": "Records historical local validation and unresolved content, legal/media and release limitations.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:TASKS.md",
+      "type": "document",
+      "name": "TASKS.md",
+      "filePath": "TASKS.md",
+      "summary": "Records task history, completed changes and remaining limitations; these historical checks are not rerun by this analysis.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:UX-CONTRACT.md",
+      "type": "document",
+      "name": "UX-CONTRACT.md",
+      "filePath": "UX-CONTRACT.md",
+      "summary": "Defines canonical owners and consistent navigation, form, feedback, media and accessibility behavior.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Defines Node runtime requirements and the documented startup/build/check commands; no application execution is performed here.",
+      "tags": [
+        "config",
+        "json",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:public/fonts/Oswald-OFL.txt",
+      "type": "document",
+      "name": "Oswald-OFL.txt",
+      "filePath": "public/fonts/Oswald-OFL.txt",
+      "summary": "Contains the bundled Oswald font license and redistribution terms.",
+      "tags": [
+        "docs",
+        "txt",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:public/fonts/Poppins-OFL.txt",
+      "type": "document",
+      "name": "Poppins-OFL.txt",
+      "filePath": "public/fonts/Poppins-OFL.txt",
+      "summary": "Contains the bundled Poppins font license and redistribution terms.",
+      "tags": [
+        "docs",
+        "txt",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:public/media/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "public/media/README.md",
+      "summary": "Documents where licensed replacement media belongs and how browser URLs map to the public directory.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    }
+  ]
+}

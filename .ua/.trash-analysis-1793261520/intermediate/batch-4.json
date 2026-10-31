@@ -1,0 +1,188 @@
+{
+  "nodes": [
+    {
+      "id": "file:public/app.js",
+      "type": "file",
+      "name": "app.js",
+      "filePath": "public/app.js",
+      "summary": "Adds browser-only navigation, disclosure dismissal, carousel/video controls, local energy calculations and validation with disconnected-default inquiries.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:public/fonts/Oswald-OFL.txt",
+      "type": "document",
+      "name": "Oswald-OFL.txt",
+      "filePath": "public/fonts/Oswald-OFL.txt",
+      "summary": "Contains the bundled Oswald font license and redistribution terms.",
+      "tags": [
+        "docs",
+        "txt",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:public/fonts/Poppins-OFL.txt",
+      "type": "document",
+      "name": "Poppins-OFL.txt",
+      "filePath": "public/fonts/Poppins-OFL.txt",
+      "summary": "Contains the bundled Poppins font license and redistribution terms.",
+      "tags": [
+        "docs",
+        "txt",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:public/media/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "public/media/README.md",
+      "summary": "Documents where licensed replacement media belongs and how browser URLs map to the public directory.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:public/reference.css",
+      "type": "file",
+      "name": "reference.css",
+      "filePath": "public/reference.css",
+      "summary": "Applies reference-led typography and responsive homepage/secondary-page layouts above the base stylesheet.",
+      "tags": [
+        "markup",
+        "css",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/styles.css",
+      "type": "file",
+      "name": "styles.css",
+      "filePath": "public/styles.css",
+      "summary": "Supplies shared base design tokens, layouts, form controls, visible scrollbars and accessibility foundations.",
+      "tags": [
+        "markup",
+        "css",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/browser-check.cjs",
+      "type": "file",
+      "name": "browser-check.cjs",
+      "filePath": "scripts/browser-check.cjs",
+      "summary": "Uses installed Playwright for local route navigation, disclosure controls, calculator/form behavior and responsive screenshots.",
+      "tags": [
+        "code",
+        "javascript",
+        "verification"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/reference-check.cjs",
+      "type": "file",
+      "name": "reference-check.cjs",
+      "filePath": "scripts/reference-check.cjs",
+      "summary": "Inspects the public Holifit homepage with Playwright and saves reference observations; intentionally not executed here.",
+      "tags": [
+        "code",
+        "javascript",
+        "verification"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/reference-pages.cjs",
+      "type": "file",
+      "name": "reference-pages.cjs",
+      "filePath": "scripts/reference-pages.cjs",
+      "summary": "Captures public Holifit secondary-page screenshots and headings into artifacts; intentionally not executed here.",
+      "tags": [
+        "code",
+        "javascript",
+        "tooling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/server-check.mjs",
+      "type": "file",
+      "name": "server-check.mjs",
+      "filePath": "scripts/server-check.mjs",
+      "summary": "Creates synthetic loopback servers to verify a busy unrelated port is preserved and preview moves to the next port.",
+      "tags": [
+        "code",
+        "javascript",
+        "verification"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/visual-review.cjs",
+      "type": "file",
+      "name": "visual-review.cjs",
+      "filePath": "scripts/visual-review.cjs",
+      "summary": "Visits generated local routes across viewport widths and records screenshots, overflow findings and runtime errors.",
+      "tags": [
+        "code",
+        "javascript",
+        "tooling"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:public/media/README.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "file:scripts/browser-check.cjs",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Static association to a test/check script; does not mean the script was run."
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "file:scripts/reference-check.cjs",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Static association to a test/check script; does not mean the script was run."
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "file:scripts/server-check.mjs",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Static association to a test/check script; does not mean the script was run."
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "file:scripts/visual-review.cjs",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Static association to a test/check script; does not mean the script was run."
+    }
+  ]
+}

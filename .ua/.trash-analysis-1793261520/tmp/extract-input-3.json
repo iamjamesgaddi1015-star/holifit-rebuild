@@ -1,0 +1,63 @@
+{
+  "projectRoot": "C:\\Users\\222170\\Documents\\James-Workspace\\04-Personal-Projects\\holifit-rebuild",
+  "batchFiles": [
+    {
+      "path": "DESIGN.md",
+      "language": "markdown",
+      "sizeLines": 52,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "MEDIA-GUIDE.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 111,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "REVIEW.md",
+      "language": "markdown",
+      "sizeLines": 39,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Start Holifit.cmd",
+      "language": "batch",
+      "sizeLines": 7,
+      "fileCategory": "script"
+    },
+    {
+      "path": "TASKS.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "UX-CONTRACT.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 12,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "DESIGN.md": [],
+    "MEDIA-GUIDE.md": [],
+    "README.md": [],
+    "REVIEW.md": [],
+    "Start Holifit.cmd": [],
+    "TASKS.md": [],
+    "UX-CONTRACT.md": [],
+    "package.json": []
+  }
+}

@@ -1,0 +1,1277 @@
+{
+  "version": "1.0.0",
+  "kind": "codebase",
+  "project": {
+    "name": "holifit-rebuild",
+    "languages": [
+      "markdown",
+      "batch",
+      "json",
+      "javascript",
+      "txt",
+      "css"
+    ],
+    "frameworks": [
+      "Node.js",
+      "ES modules"
+    ],
+    "description": "A dependency-free corporate-wellness website with pre-rendered routes, configurable content and local interactive forms and calculator.",
+    "analyzedAt": "2026-10-29T08:08:35.655Z",
+    "gitCommitHash": "58edcbf1f68433b51d5a8e3e3a7a31b288e39470"
+  },
+  "nodes": [
+    {
+      "id": "file:src/brand.mjs",
+      "type": "file",
+      "name": "brand.mjs",
+      "filePath": "src/brand.mjs",
+      "summary": "Renders the shared logo, navigation, footer and contact/map band used throughout generated routes.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/brand.mjs:logo",
+      "type": "function",
+      "name": "logo",
+      "filePath": "src/brand.mjs",
+      "lineRange": [
+        3,
+        3
+      ],
+      "summary": "Renders the configured logo image or the honest SVG wordmark placeholder.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/brand.mjs:header",
+      "type": "function",
+      "name": "header",
+      "filePath": "src/brand.mjs",
+      "lineRange": [
+        4,
+        4
+      ],
+      "summary": "Renders shared navigation with active-route state, services menu, resource disclosure and consultation link.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/brand.mjs:footer",
+      "type": "function",
+      "name": "footer",
+      "filePath": "src/brand.mjs",
+      "lineRange": [
+        5,
+        5
+      ],
+      "summary": "Renders shared footer navigation and legal destinations.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/brand.mjs:contactBand",
+      "type": "function",
+      "name": "contactBand",
+      "filePath": "src/brand.mjs",
+      "lineRange": [
+        6,
+        6
+      ],
+      "summary": "Renders shared contact destinations and the schematic replaceable location map.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components.mjs",
+      "type": "file",
+      "name": "components.mjs",
+      "filePath": "src/components.mjs",
+      "summary": "Provides escaped HTML primitives, media/FAQ/testimonial sections, the contact form contract and the complete document shell.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:escape",
+      "type": "function",
+      "name": "escape",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        4,
+        4
+      ],
+      "summary": "Escapes HTML-sensitive characters before inserting values into generated markup.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:button",
+      "type": "function",
+      "name": "button",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        5,
+        5
+      ],
+      "summary": "Renders an escaped anchor in primary or outline button styling.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:media",
+      "type": "function",
+      "name": "media",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        6,
+        8
+      ],
+      "summary": "Renders a reserved-size local image or an explicitly labelled placeholder figure.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:faq",
+      "type": "function",
+      "name": "faq",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        9,
+        9
+      ],
+      "summary": "Renders content-driven FAQ disclosures.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:quotes",
+      "type": "function",
+      "name": "quotes",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        10,
+        10
+      ],
+      "summary": "Renders editable testimonial placeholders without asserting approved real endorsements.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:cta",
+      "type": "function",
+      "name": "cta",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        11,
+        11
+      ],
+      "summary": "Renders the shared consultation call-to-action.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:form",
+      "type": "function",
+      "name": "form",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        12,
+        12
+      ],
+      "summary": "Builds named inquiry inputs, inline error/status slots and disconnected-default endpoint/email attributes.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:shell",
+      "type": "function",
+      "name": "shell",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        13,
+        13
+      ],
+      "summary": "Wraps a page body with metadata, styles, browser script, shared header, main landmark and footer.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/content.mjs",
+      "type": "file",
+      "name": "content.mjs",
+      "filePath": "src/content.mjs",
+      "summary": "Exports shared site settings, service records, navigation, media slots, FAQs, testimonials and resource placeholders for build-time rendering.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/home.mjs",
+      "type": "file",
+      "name": "home.mjs",
+      "filePath": "src/home.mjs",
+      "summary": "Renders the reference-led wellness homepage with service features, client placeholders, testimonials, FAQs and disconnected catalog form.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/home.mjs:home",
+      "type": "function",
+      "name": "home",
+      "filePath": "src/home.mjs",
+      "lineRange": [
+        8,
+        22
+      ],
+      "summary": "Renders the reference-led homepage using the current service/content catalogue.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/reference-pages.mjs",
+      "type": "file",
+      "name": "reference-pages.mjs",
+      "filePath": "src/reference-pages.mjs",
+      "summary": "Selects distinct secondary-page layouts and renders the adult BMR/TDEE calculator form and catalog sections.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/reference-pages.mjs:referenceBody",
+      "type": "function",
+      "name": "referenceBody",
+      "filePath": "src/reference-pages.mjs",
+      "lineRange": [
+        20,
+        30
+      ],
+      "summary": "Chooses a specific reference layout by route slug and falls back to the page body when no override exists.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/build.mjs",
+      "type": "file",
+      "name": "build.mjs",
+      "filePath": "scripts/build.mjs",
+      "summary": "Copies public assets and writes a directory index HTML file for each route plus a separate 404.html into dist.",
+      "tags": [
+        "code",
+        "javascript",
+        "tooling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/check.mjs",
+      "type": "file",
+      "name": "check.mjs",
+      "filePath": "scripts/check.mjs",
+      "summary": "Asserts unique routes/slugs, one h1 and main landmark, valid internal links/media and the disconnected form endpoint default.",
+      "tags": [
+        "code",
+        "javascript",
+        "verification"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/server.mjs",
+      "type": "file",
+      "name": "server.mjs",
+      "filePath": "scripts/server.mjs",
+      "summary": "Builds before serving dist on loopback port 4173 by default, contains traversal boundaries, serves true 404 responses and handles port collisions.",
+      "tags": [
+        "code",
+        "javascript",
+        "tooling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/pages.mjs",
+      "type": "file",
+      "name": "pages.mjs",
+      "filePath": "src/pages.mjs",
+      "summary": "Builds the full page catalogue from service/content exports, selects reference layouts and wraps each route in the shared HTML shell.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/pages.mjs:getPages",
+      "type": "function",
+      "name": "getPages",
+      "filePath": "src/pages.mjs",
+      "lineRange": [
+        7,
+        21
+      ],
+      "summary": "Creates route descriptors, adds service and editorial/resource/legal pages, applies referenceBody and returns complete HTML for each.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:DESIGN.md",
+      "type": "document",
+      "name": "DESIGN.md",
+      "filePath": "DESIGN.md",
+      "summary": "Records brand direction, typography, colors, layout and accessibility decisions that guide the rendered site.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:MEDIA-GUIDE.md",
+      "type": "document",
+      "name": "MEDIA-GUIDE.md",
+      "filePath": "MEDIA-GUIDE.md",
+      "summary": "Explains replaceable local image/video slots, file locations, recommended dimensions and rebuild steps.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Explains local startup, editable source boundaries, integration limitations, verification commands and recovery.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:REVIEW.md",
+      "type": "document",
+      "name": "REVIEW.md",
+      "filePath": "REVIEW.md",
+      "summary": "Records historical local validation and unresolved content, legal/media and release limitations.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:Start Holifit.cmd",
+      "type": "file",
+      "name": "Start Holifit.cmd",
+      "filePath": "Start Holifit.cmd",
+      "summary": "Starts the Node-based Holifit preview from the project directory.",
+      "tags": [
+        "script",
+        "batch",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:TASKS.md",
+      "type": "document",
+      "name": "TASKS.md",
+      "filePath": "TASKS.md",
+      "summary": "Records task history, completed changes and remaining limitations; these historical checks are not rerun by this analysis.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:UX-CONTRACT.md",
+      "type": "document",
+      "name": "UX-CONTRACT.md",
+      "filePath": "UX-CONTRACT.md",
+      "summary": "Defines canonical owners and consistent navigation, form, feedback, media and accessibility behavior.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Defines Node runtime requirements and the documented startup/build/check commands; no application execution is performed here.",
+      "tags": [
+        "config",
+        "json",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:public/app.js",
+      "type": "file",
+      "name": "app.js",
+      "filePath": "public/app.js",
+      "summary": "Adds browser-only navigation, disclosure dismissal, carousel/video controls, local energy calculations and validation with disconnected-default inquiries.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:public/fonts/Oswald-OFL.txt",
+      "type": "document",
+      "name": "Oswald-OFL.txt",
+      "filePath": "public/fonts/Oswald-OFL.txt",
+      "summary": "Contains the bundled Oswald font license and redistribution terms.",
+      "tags": [
+        "docs",
+        "txt",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:public/fonts/Poppins-OFL.txt",
+      "type": "document",
+      "name": "Poppins-OFL.txt",
+      "filePath": "public/fonts/Poppins-OFL.txt",
+      "summary": "Contains the bundled Poppins font license and redistribution terms.",
+      "tags": [
+        "docs",
+        "txt",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:public/media/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "public/media/README.md",
+      "summary": "Documents where licensed replacement media belongs and how browser URLs map to the public directory.",
+      "tags": [
+        "docs",
+        "markdown",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:public/reference.css",
+      "type": "file",
+      "name": "reference.css",
+      "filePath": "public/reference.css",
+      "summary": "Applies reference-led typography and responsive homepage/secondary-page layouts above the base stylesheet.",
+      "tags": [
+        "markup",
+        "css",
+        "project-context"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:public/styles.css",
+      "type": "file",
+      "name": "styles.css",
+      "filePath": "public/styles.css",
+      "summary": "Supplies shared base design tokens, layouts, form controls, visible scrollbars and accessibility foundations.",
+      "tags": [
+        "markup",
+        "css",
+        "project-context"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/browser-check.cjs",
+      "type": "file",
+      "name": "browser-check.cjs",
+      "filePath": "scripts/browser-check.cjs",
+      "summary": "Uses installed Playwright for local route navigation, disclosure controls, calculator/form behavior and responsive screenshots.",
+      "tags": [
+        "code",
+        "javascript",
+        "verification"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/reference-check.cjs",
+      "type": "file",
+      "name": "reference-check.cjs",
+      "filePath": "scripts/reference-check.cjs",
+      "summary": "Inspects the public Holifit homepage with Playwright and saves reference observations; intentionally not executed here.",
+      "tags": [
+        "code",
+        "javascript",
+        "verification"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/reference-pages.cjs",
+      "type": "file",
+      "name": "reference-pages.cjs",
+      "filePath": "scripts/reference-pages.cjs",
+      "summary": "Captures public Holifit secondary-page screenshots and headings into artifacts; intentionally not executed here.",
+      "tags": [
+        "code",
+        "javascript",
+        "tooling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/server-check.mjs",
+      "type": "file",
+      "name": "server-check.mjs",
+      "filePath": "scripts/server-check.mjs",
+      "summary": "Creates synthetic loopback servers to verify a busy unrelated port is preserved and preview moves to the next port.",
+      "tags": [
+        "code",
+        "javascript",
+        "verification"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/visual-review.cjs",
+      "type": "file",
+      "name": "visual-review.cjs",
+      "filePath": "scripts/visual-review.cjs",
+      "summary": "Visits generated local routes across viewport widths and records screenshots, overflow findings and runtime errors.",
+      "tags": [
+        "code",
+        "javascript",
+        "tooling"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/brand.mjs",
+      "target": "file:src/content.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:logo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:logo",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:header",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:header",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:footer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:footer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:contactBand",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:contactBand",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/brand.mjs:header",
+      "target": "function:src/brand.mjs:logo",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "file:src/brand.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "file:src/content.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:escape",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:escape",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:button",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:button",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:media",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:media",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:faq",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:faq",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:quotes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:quotes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:cta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:cta",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:form",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:form",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:shell",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:shell",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/components.mjs:button",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:media",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:faq",
+      "target": "function:src/components.mjs:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:faq",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:quotes",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:cta",
+      "target": "function:src/components.mjs:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:form",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:shell",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "file:src/home.mjs",
+      "target": "file:src/components.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/home.mjs",
+      "target": "file:src/content.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/home.mjs",
+      "target": "function:src/home.mjs:home",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/home.mjs",
+      "target": "function:src/home.mjs:home",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/reference-pages.mjs",
+      "target": "file:src/components.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/reference-pages.mjs",
+      "target": "file:src/content.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/reference-pages.mjs",
+      "target": "function:src/reference-pages.mjs:referenceBody",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/reference-pages.mjs",
+      "target": "function:src/reference-pages.mjs:referenceBody",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build.mjs",
+      "target": "file:src/pages.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/check.mjs",
+      "target": "file:src/content.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/check.mjs",
+      "target": "file:src/pages.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/server.mjs",
+      "target": "file:scripts/build.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "file:src/components.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "file:src/content.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "file:src/home.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "file:src/reference-pages.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "function:src/pages.mjs:getPages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "function:src/pages.mjs:getPages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "document:DESIGN.md",
+      "target": "file:public/reference.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:MEDIA-GUIDE.md",
+      "target": "file:src/content.mjs",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:REVIEW.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:TASKS.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/browser-check.cjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/build.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/check.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/reference-check.cjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/reference-pages.cjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/server-check.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/server.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:scripts/visual-review.cjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:public/media/README.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:content",
+      "name": "Content and media",
+      "description": "Editable business records, contact destinations and local media configuration.",
+      "nodeIds": [
+        "file:src/content.mjs"
+      ]
+    },
+    {
+      "id": "layer:application",
+      "name": "Page and browser behavior",
+      "description": "Page composition, shared components, dialogs and client-side interactions.",
+      "nodeIds": [
+        "file:public/app.js",
+        "file:src/brand.mjs",
+        "file:src/components.mjs",
+        "file:src/home.mjs",
+        "file:src/pages.mjs",
+        "file:src/reference-pages.mjs"
+      ]
+    },
+    {
+      "id": "layer:presentation",
+      "name": "Visual system",
+      "description": "Base and refinement stylesheets, local fonts and document markup.",
+      "nodeIds": [
+        "document:public/fonts/Oswald-OFL.txt",
+        "document:public/fonts/Poppins-OFL.txt",
+        "file:public/reference.css",
+        "file:public/styles.css"
+      ]
+    },
+    {
+      "id": "layer:tooling",
+      "name": "Build and local preview",
+      "description": "Existing-toolchain resolution, packaging, launchers and loopback-only preview server.",
+      "nodeIds": [
+        "file:Start Holifit.cmd",
+        "file:scripts/build.mjs",
+        "file:scripts/server.mjs"
+      ]
+    },
+    {
+      "id": "layer:verification",
+      "name": "Checks and reference evidence",
+      "description": "Local test scripts, reference-capture utilities and historical review evidence.",
+      "nodeIds": [
+        "file:scripts/browser-check.cjs",
+        "file:scripts/check.mjs",
+        "file:scripts/reference-check.cjs",
+        "file:scripts/reference-pages.cjs",
+        "file:scripts/server-check.mjs",
+        "file:scripts/visual-review.cjs"
+      ]
+    },
+    {
+      "id": "layer:documentation",
+      "name": "Project guidance",
+      "description": "Overview, design/UX contracts, edit instructions, package/compiler configuration and task history.",
+      "nodeIds": [
+        "document:DESIGN.md",
+        "document:MEDIA-GUIDE.md",
+        "document:README.md",
+        "document:REVIEW.md",
+        "document:TASKS.md",
+        "document:UX-CONTRACT.md",
+        "config:package.json",
+        "document:public/media/README.md"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Project overview",
+      "description": "Read the reconstruction scope, placeholders and disconnected integrations. HTML is pre-rendered; the Node server is a local preview tool.",
+      "nodeIds": [
+        "document:README.md",
+        "document:UX-CONTRACT.md"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Shared content model",
+      "description": "All routes derive shared business metadata, services and media from this module. Empty booking/form settings intentionally preserve the disconnected state.",
+      "nodeIds": [
+        "file:src/content.mjs",
+        "document:MEDIA-GUIDE.md"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Templates and document shell",
+      "description": "Read escaped primitives and shared header/footer before route assembly. The shell consistently attaches styles, app.js and landmarks.",
+      "nodeIds": [
+        "file:src/components.mjs",
+        "file:src/brand.mjs"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Route rendering",
+      "description": "Follow getPages, homepage rendering and secondary-layout selection. The final HTML uses referenceBody overrides rather than only the initial fallback bodies.",
+      "nodeIds": [
+        "file:src/pages.mjs",
+        "file:src/home.mjs",
+        "file:src/reference-pages.mjs"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Browser interaction",
+      "description": "The browser script owns disclosure behavior, calculator validation and inquiry preparation. The default form creates a mailto link and sends nothing.",
+      "nodeIds": [
+        "file:public/app.js",
+        "file:public/reference.css",
+        "file:public/styles.css"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Static build and server",
+      "description": "The build writes directory-index routes and 404.html. The loopback preview imports the build and handles occupied ports without killing other processes.",
+      "nodeIds": [
+        "file:scripts/build.mjs",
+        "file:scripts/server.mjs"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Checks and remaining work",
+      "description": "Static route/media checks and browser scripts provide different evidence. Original approved media, legal text and enabled integrations remain outside this analysis.",
+      "nodeIds": [
+        "file:scripts/check.mjs",
+        "file:scripts/browser-check.cjs",
+        "document:REVIEW.md"
+      ]
+    }
+  ]
+}

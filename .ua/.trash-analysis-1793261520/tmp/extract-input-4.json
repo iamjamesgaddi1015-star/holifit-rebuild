@@ -1,0 +1,84 @@
+{
+  "projectRoot": "C:\\Users\\222170\\Documents\\James-Workspace\\04-Personal-Projects\\holifit-rebuild",
+  "batchFiles": [
+    {
+      "path": "public/app.js",
+      "language": "javascript",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "public/fonts/Oswald-OFL.txt",
+      "language": "txt",
+      "sizeLines": 93,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "public/fonts/Poppins-OFL.txt",
+      "language": "txt",
+      "sizeLines": 93,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "public/media/README.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "public/reference.css",
+      "language": "css",
+      "sizeLines": 92,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "public/styles.css",
+      "language": "css",
+      "sizeLines": 12,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "scripts/browser-check.cjs",
+      "language": "javascript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/reference-check.cjs",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/reference-pages.cjs",
+      "language": "javascript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/server-check.mjs",
+      "language": "javascript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/visual-review.cjs",
+      "language": "javascript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "public/app.js": [],
+    "public/fonts/Oswald-OFL.txt": [],
+    "public/fonts/Poppins-OFL.txt": [],
+    "public/media/README.md": [],
+    "public/reference.css": [],
+    "public/styles.css": [],
+    "scripts/browser-check.cjs": [],
+    "scripts/reference-check.cjs": [],
+    "scripts/reference-pages.cjs": [],
+    "scripts/server-check.mjs": [],
+    "scripts/visual-review.cjs": []
+  }
+}

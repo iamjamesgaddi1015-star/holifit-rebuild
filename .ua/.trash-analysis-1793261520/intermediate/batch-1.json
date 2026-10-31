@@ -1,0 +1,714 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/brand.mjs",
+      "type": "file",
+      "name": "brand.mjs",
+      "filePath": "src/brand.mjs",
+      "summary": "Renders the shared logo, navigation, footer and contact/map band used throughout generated routes.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/brand.mjs:logo",
+      "type": "function",
+      "name": "logo",
+      "filePath": "src/brand.mjs",
+      "lineRange": [
+        3,
+        3
+      ],
+      "summary": "Renders the configured logo image or the honest SVG wordmark placeholder.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/brand.mjs:header",
+      "type": "function",
+      "name": "header",
+      "filePath": "src/brand.mjs",
+      "lineRange": [
+        4,
+        4
+      ],
+      "summary": "Renders shared navigation with active-route state, services menu, resource disclosure and consultation link.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/brand.mjs:footer",
+      "type": "function",
+      "name": "footer",
+      "filePath": "src/brand.mjs",
+      "lineRange": [
+        5,
+        5
+      ],
+      "summary": "Renders shared footer navigation and legal destinations.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/brand.mjs:contactBand",
+      "type": "function",
+      "name": "contactBand",
+      "filePath": "src/brand.mjs",
+      "lineRange": [
+        6,
+        6
+      ],
+      "summary": "Renders shared contact destinations and the schematic replaceable location map.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components.mjs",
+      "type": "file",
+      "name": "components.mjs",
+      "filePath": "src/components.mjs",
+      "summary": "Provides escaped HTML primitives, media/FAQ/testimonial sections, the contact form contract and the complete document shell.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:escape",
+      "type": "function",
+      "name": "escape",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        4,
+        4
+      ],
+      "summary": "Escapes HTML-sensitive characters before inserting values into generated markup.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:button",
+      "type": "function",
+      "name": "button",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        5,
+        5
+      ],
+      "summary": "Renders an escaped anchor in primary or outline button styling.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:media",
+      "type": "function",
+      "name": "media",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        6,
+        8
+      ],
+      "summary": "Renders a reserved-size local image or an explicitly labelled placeholder figure.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:faq",
+      "type": "function",
+      "name": "faq",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        9,
+        9
+      ],
+      "summary": "Renders content-driven FAQ disclosures.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:quotes",
+      "type": "function",
+      "name": "quotes",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        10,
+        10
+      ],
+      "summary": "Renders editable testimonial placeholders without asserting approved real endorsements.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:cta",
+      "type": "function",
+      "name": "cta",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        11,
+        11
+      ],
+      "summary": "Renders the shared consultation call-to-action.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:form",
+      "type": "function",
+      "name": "form",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        12,
+        12
+      ],
+      "summary": "Builds named inquiry inputs, inline error/status slots and disconnected-default endpoint/email attributes.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components.mjs:shell",
+      "type": "function",
+      "name": "shell",
+      "filePath": "src/components.mjs",
+      "lineRange": [
+        13,
+        13
+      ],
+      "summary": "Wraps a page body with metadata, styles, browser script, shared header, main landmark and footer.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/content.mjs",
+      "type": "file",
+      "name": "content.mjs",
+      "filePath": "src/content.mjs",
+      "summary": "Exports shared site settings, service records, navigation, media slots, FAQs, testimonials and resource placeholders for build-time rendering.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/home.mjs",
+      "type": "file",
+      "name": "home.mjs",
+      "filePath": "src/home.mjs",
+      "summary": "Renders the reference-led wellness homepage with service features, client placeholders, testimonials, FAQs and disconnected catalog form.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/home.mjs:home",
+      "type": "function",
+      "name": "home",
+      "filePath": "src/home.mjs",
+      "lineRange": [
+        8,
+        22
+      ],
+      "summary": "Renders the reference-led homepage using the current service/content catalogue.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/reference-pages.mjs",
+      "type": "file",
+      "name": "reference-pages.mjs",
+      "filePath": "src/reference-pages.mjs",
+      "summary": "Selects distinct secondary-page layouts and renders the adult BMR/TDEE calculator form and catalog sections.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/reference-pages.mjs:referenceBody",
+      "type": "function",
+      "name": "referenceBody",
+      "filePath": "src/reference-pages.mjs",
+      "lineRange": [
+        20,
+        30
+      ],
+      "summary": "Chooses a specific reference layout by route slug and falls back to the page body when no override exists.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/brand.mjs",
+      "target": "file:src/content.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:logo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:logo",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:header",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:header",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:footer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:footer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:contactBand",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/brand.mjs",
+      "target": "function:src/brand.mjs:contactBand",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/brand.mjs:header",
+      "target": "function:src/brand.mjs:logo",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "file:src/brand.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "file:src/content.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:escape",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:escape",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:button",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:button",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:media",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:media",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:faq",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:faq",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:quotes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:quotes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:cta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:cta",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:form",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:form",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:shell",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components.mjs",
+      "target": "function:src/components.mjs:shell",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/components.mjs:button",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:button",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:media",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:media",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:media",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:media",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:faq",
+      "target": "function:src/components.mjs:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:faq",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:faq",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:quotes",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:quotes",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:quotes",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:quotes",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:cta",
+      "target": "function:src/components.mjs:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:form",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:form",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:shell",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:shell",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "function:src/components.mjs:shell",
+      "target": "function:src/components.mjs:escape",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Deterministically extracted local call."
+    },
+    {
+      "source": "file:src/home.mjs",
+      "target": "file:src/components.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/home.mjs",
+      "target": "file:src/content.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/home.mjs",
+      "target": "function:src/home.mjs:home",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/home.mjs",
+      "target": "function:src/home.mjs:home",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/reference-pages.mjs",
+      "target": "file:src/components.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/reference-pages.mjs",
+      "target": "file:src/content.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/reference-pages.mjs",
+      "target": "function:src/reference-pages.mjs:referenceBody",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/reference-pages.mjs",
+      "target": "function:src/reference-pages.mjs:referenceBody",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

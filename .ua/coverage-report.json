@@ -1,0 +1,42 @@
+{
+  "analyzedAt": "2026-10-29T08:08:35.655Z",
+  "eligibleFiles": 28,
+  "representedFiles": 28,
+  "missingFiles": [],
+  "fileCategories": {
+    "docs": 9,
+    "script": 1,
+    "config": 1,
+    "code": 15,
+    "markup": 2
+  },
+  "nodeTypes": {
+    "file": 18,
+    "function": 15,
+    "document": 9,
+    "config": 1
+  },
+  "edgeTypes": {
+    "imports": 15,
+    "contains": 15,
+    "exports": 15,
+    "calls": 9,
+    "documents": 7,
+    "configures": 8
+  },
+  "schemaValid": true,
+  "issues": [],
+  "warnings": [
+    "Static source analysis only: app/browser/network flows were not executed.",
+    "Binary assets, dependencies, generated builds, large captured audits, secrets and local private data are excluded.",
+    "Anonymous callbacks, runtime DOM wiring and third-party behavior are described at file level; graph edges are not a complete execution trace.",
+    "Merge removed 5 noncanonical tested_by associations; source check scripts remain represented."
+  ],
+  "extractionSkipped": [
+    "Start Holifit.cmd",
+    "public/fonts/Oswald-OFL.txt",
+    "public/fonts/Poppins-OFL.txt",
+    "public/reference.css",
+    "public/styles.css"
+  ]
+}

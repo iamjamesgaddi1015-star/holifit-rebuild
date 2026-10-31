@@ -1,0 +1,1299 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 5,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 5,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "src/brand.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "functions": [
+        {
+          "name": "e",
+          "startLine": 2,
+          "endLine": 2,
+          "params": []
+        },
+        {
+          "name": "logo",
+          "startLine": 3,
+          "endLine": 3,
+          "params": []
+        },
+        {
+          "name": "header",
+          "startLine": 4,
+          "endLine": 4,
+          "params": [
+            "path"
+          ]
+        },
+        {
+          "name": "footer",
+          "startLine": 5,
+          "endLine": 5,
+          "params": []
+        },
+        {
+          "name": "contactBand",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "logo",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "header",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "footer",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "contactBand",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "e",
+          "callee": "String(s).replace",
+          "lineNumber": 2
+        },
+        {
+          "caller": "e",
+          "callee": "String",
+          "lineNumber": 2
+        },
+        {
+          "caller": "logo",
+          "callee": "e",
+          "lineNumber": 3
+        },
+        {
+          "caller": "link",
+          "callee": "e",
+          "lineNumber": 4
+        },
+        {
+          "caller": "header",
+          "callee": "navigation.slice(0,2).map(link).join",
+          "lineNumber": 4
+        },
+        {
+          "caller": "header",
+          "callee": "navigation.slice(0,2).map",
+          "lineNumber": 4
+        },
+        {
+          "caller": "header",
+          "callee": "navigation.slice",
+          "lineNumber": 4
+        },
+        {
+          "caller": "header",
+          "callee": "services.map(s=>link([s.short,`/${s.slug}/`])).join",
+          "lineNumber": 4
+        },
+        {
+          "caller": "header",
+          "callee": "services.map",
+          "lineNumber": 4
+        },
+        {
+          "caller": "header",
+          "callee": "link",
+          "lineNumber": 4
+        },
+        {
+          "caller": "header",
+          "callee": "navigation.slice(2,4).map(link).join",
+          "lineNumber": 4
+        },
+        {
+          "caller": "header",
+          "callee": "navigation.slice(2,4).map",
+          "lineNumber": 4
+        },
+        {
+          "caller": "header",
+          "callee": "navigation.slice",
+          "lineNumber": 4
+        },
+        {
+          "caller": "header",
+          "callee": "link",
+          "lineNumber": 4
+        },
+        {
+          "caller": "header",
+          "callee": "link",
+          "lineNumber": 4
+        },
+        {
+          "caller": "header",
+          "callee": "link",
+          "lineNumber": 4
+        },
+        {
+          "caller": "header",
+          "callee": "logo",
+          "lineNumber": 4
+        },
+        {
+          "caller": "footer",
+          "callee": "e",
+          "lineNumber": 5
+        },
+        {
+          "caller": "footer",
+          "callee": "services.slice(1).map(s=>`<a href=\"/${s.slug}/\">${e(s.short)}</a>`).join",
+          "lineNumber": 5
+        },
+        {
+          "caller": "footer",
+          "callee": "services.slice(1).map",
+          "lineNumber": 5
+        },
+        {
+          "caller": "footer",
+          "callee": "services.slice",
+          "lineNumber": 5
+        },
+        {
+          "caller": "footer",
+          "callee": "e",
+          "lineNumber": 5
+        },
+        {
+          "caller": "footer",
+          "callee": "navigation.slice(1).map(([n,h])=>`<a href=\"${h}\">${n}</a>`).join",
+          "lineNumber": 5
+        },
+        {
+          "caller": "footer",
+          "callee": "navigation.slice(1).map",
+          "lineNumber": 5
+        },
+        {
+          "caller": "footer",
+          "callee": "navigation.slice",
+          "lineNumber": 5
+        },
+        {
+          "caller": "footer",
+          "callee": "new Date().getFullYear",
+          "lineNumber": 5
+        },
+        {
+          "caller": "contactBand",
+          "callee": "[['▤','Admin Office',`<p>${e(site.address)}</p>`],['+','Book a Meeting','<p>Explore a wellness program for your people.</p><a href=\"/schedule-call/\">Schedule a call →</a>'],['◔','Call Us',`<a href=\"tel:${site.phoneHref}\">${e(site.phone)}</a>`],['◇','Email Us',`<a href=\"mailto:${e(site.email)}\">${e(site.email)}</a>`]].map(([icon,title,body])=>`<div class=\"contact-detail\"><span aria-hidden=\"true\">${icon}</span><div><h3>${title}</h3>${body}</div></div>`).join",
+          "lineNumber": 6
+        },
+        {
+          "caller": "contactBand",
+          "callee": "[['▤','Admin Office',`<p>${e(site.address)}</p>`],['+','Book a Meeting','<p>Explore a wellness program for your people.</p><a href=\"/schedule-call/\">Schedule a call →</a>'],['◔','Call Us',`<a href=\"tel:${site.phoneHref}\">${e(site.phone)}</a>`],['◇','Email Us',`<a href=\"mailto:${e(site.email)}\">${e(site.email)}</a>`]].map",
+          "lineNumber": 6
+        },
+        {
+          "caller": "contactBand",
+          "callee": "e",
+          "lineNumber": 6
+        },
+        {
+          "caller": "contactBand",
+          "callee": "e",
+          "lineNumber": 6
+        },
+        {
+          "caller": "contactBand",
+          "callee": "e",
+          "lineNumber": 6
+        },
+        {
+          "caller": "contactBand",
+          "callee": "e",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 4,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/components.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "escape",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "button",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "label"
+          ]
+        },
+        {
+          "name": "media",
+          "startLine": 6,
+          "endLine": 8,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "faq",
+          "startLine": 9,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "quotes",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        },
+        {
+          "name": "cta",
+          "startLine": 11,
+          "endLine": 11,
+          "params": []
+        },
+        {
+          "name": "form",
+          "startLine": 12,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "shell",
+          "startLine": 13,
+          "endLine": 13,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "header",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "footer",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "contactBand",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "escape",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "button",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "media",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "faq",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "quotes",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "cta",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "form",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "shell",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "escape",
+          "callee": "String(value).replace",
+          "lineNumber": 4
+        },
+        {
+          "caller": "escape",
+          "callee": "String",
+          "lineNumber": 4
+        },
+        {
+          "caller": "button",
+          "callee": "escape",
+          "lineNumber": 5
+        },
+        {
+          "caller": "button",
+          "callee": "escape",
+          "lineNumber": 5
+        },
+        {
+          "caller": "media",
+          "callee": "escape",
+          "lineNumber": 7
+        },
+        {
+          "caller": "media",
+          "callee": "escape",
+          "lineNumber": 7
+        },
+        {
+          "caller": "media",
+          "callee": "escape",
+          "lineNumber": 7
+        },
+        {
+          "caller": "media",
+          "callee": "escape",
+          "lineNumber": 7
+        },
+        {
+          "caller": "faq",
+          "callee": "button",
+          "lineNumber": 9
+        },
+        {
+          "caller": "faq",
+          "callee": "faqs.map(([q,a])=>`<details><summary>${escape(q)}<span aria-hidden=\"true\">＋</span></summary><p>${escape(a)}</p></details>`).join",
+          "lineNumber": 9
+        },
+        {
+          "caller": "faq",
+          "callee": "faqs.map",
+          "lineNumber": 9
+        },
+        {
+          "caller": "faq",
+          "callee": "escape",
+          "lineNumber": 9
+        },
+        {
+          "caller": "faq",
+          "callee": "escape",
+          "lineNumber": 9
+        },
+        {
+          "caller": "quotes",
+          "callee": "testimonials.map(t=>`<figure class=\"quote\"><div class=\"stars\" aria-label=\"Rating placeholder\">☆ ☆ ☆ ☆ ☆</div><blockquote>“${escape(t.quote)}”</blockquote><figcaption><span class=\"avatar\" aria-hidden=\"true\">${t.src ? `<img src=\"${escape(t.src)}\" alt=\"\" width=\"48\" height=\"48\">` : '＋'}</span><span><strong>${escape(t.name)}</strong><small>${escape(t.role)}</small></span></figcaption></figure>`).join",
+          "lineNumber": 10
+        },
+        {
+          "caller": "quotes",
+          "callee": "testimonials.map",
+          "lineNumber": 10
+        },
+        {
+          "caller": "quotes",
+          "callee": "escape",
+          "lineNumber": 10
+        },
+        {
+          "caller": "quotes",
+          "callee": "escape",
+          "lineNumber": 10
+        },
+        {
+          "caller": "quotes",
+          "callee": "escape",
+          "lineNumber": 10
+        },
+        {
+          "caller": "quotes",
+          "callee": "escape",
+          "lineNumber": 10
+        },
+        {
+          "caller": "cta",
+          "callee": "button",
+          "lineNumber": 11
+        },
+        {
+          "caller": "form",
+          "callee": "escape",
+          "lineNumber": 12
+        },
+        {
+          "caller": "form",
+          "callee": "escape",
+          "lineNumber": 12
+        },
+        {
+          "caller": "form",
+          "callee": "[['firstName','First name','text','given-name'],['lastName','Last name','text','family-name'],['email','Work email','email','email'],['phone','Phone number','tel','tel'],['company','Company','text','organization']].map(([n,l,t,a])=>`<div class=\"field\"><label for=\"${n}\">${l}${n==='phone'?' (optional)':' *'}</label><input id=\"${n}\" name=\"${n}\" type=\"${t}\" autocomplete=\"${a}\"${n==='phone'?'':' required'} aria-describedby=\"${n}-error\"><span id=\"${n}-error\" class=\"field-error\"></span></div>`).join",
+          "lineNumber": 12
+        },
+        {
+          "caller": "form",
+          "callee": "[['firstName','First name','text','given-name'],['lastName','Last name','text','family-name'],['email','Work email','email','email'],['phone','Phone number','tel','tel'],['company','Company','text','organization']].map",
+          "lineNumber": 12
+        },
+        {
+          "caller": "form",
+          "callee": "services.map(s=>`<option>${s.short}</option>`).join",
+          "lineNumber": 12
+        },
+        {
+          "caller": "form",
+          "callee": "services.map",
+          "lineNumber": 12
+        },
+        {
+          "caller": "shell",
+          "callee": "escape",
+          "lineNumber": 13
+        },
+        {
+          "caller": "shell",
+          "callee": "escape",
+          "lineNumber": 13
+        },
+        {
+          "caller": "shell",
+          "callee": "escape",
+          "lineNumber": 13
+        },
+        {
+          "caller": "shell",
+          "callee": "path.replaceAll",
+          "lineNumber": 13
+        },
+        {
+          "caller": "shell",
+          "callee": "header",
+          "lineNumber": 13
+        },
+        {
+          "caller": "shell",
+          "callee": "footer",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 11,
+        "functionCount": 8,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/content.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 53,
+      "exports": [
+        {
+          "name": "site",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "pageMedia",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "mediaLogos",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "services",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "navigation",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "clientLogos",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "faqs",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "testimonials",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "resources",
+          "line": 49,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/home.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 22,
+      "functions": [
+        {
+          "name": "tile",
+          "startLine": 6,
+          "endLine": 6,
+          "params": [
+            "i"
+          ]
+        },
+        {
+          "name": "partner",
+          "startLine": 7,
+          "endLine": 7,
+          "params": [
+            "name",
+            "i"
+          ]
+        },
+        {
+          "name": "home",
+          "startLine": 8,
+          "endLine": 22,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "home",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "partner",
+          "callee": "escape",
+          "lineNumber": 7
+        },
+        {
+          "caller": "partner",
+          "callee": "escape",
+          "lineNumber": 7
+        },
+        {
+          "caller": "home",
+          "callee": "escape",
+          "lineNumber": 9
+        },
+        {
+          "caller": "home",
+          "callee": "escape",
+          "lineNumber": 9
+        },
+        {
+          "caller": "home",
+          "callee": "escape",
+          "lineNumber": 9
+        },
+        {
+          "caller": "home",
+          "callee": "button",
+          "lineNumber": 9
+        },
+        {
+          "caller": "home",
+          "callee": "button",
+          "lineNumber": 9
+        },
+        {
+          "caller": "home",
+          "callee": "clientLogos.map((l,i)=>l.src?`<img src=\"${escape(l.src)}\" alt=\"${escape(l.name)}\" width=\"130\" height=\"55\">`:partner(l.name,i)).join",
+          "lineNumber": 10
+        },
+        {
+          "caller": "home",
+          "callee": "clientLogos.map",
+          "lineNumber": 10
+        },
+        {
+          "caller": "home",
+          "callee": "escape",
+          "lineNumber": 10
+        },
+        {
+          "caller": "home",
+          "callee": "escape",
+          "lineNumber": 10
+        },
+        {
+          "caller": "home",
+          "callee": "partner",
+          "lineNumber": 10
+        },
+        {
+          "caller": "home",
+          "callee": "media",
+          "lineNumber": 11
+        },
+        {
+          "caller": "home",
+          "callee": "featureIds.map((id,i)=>{const s=services[id];return `<article class=\"program-row${i%2?' reverse':''}\">${media(s.media,s.short)}<div class=\"program-copy\"><h3>${s.title}</h3><p>${s.description}</p>${button(`Explore ${s.short}`,`/${s.slug}/`)}</div></article>`;}).join",
+          "lineNumber": 14
+        },
+        {
+          "caller": "home",
+          "callee": "featureIds.map",
+          "lineNumber": 14
+        },
+        {
+          "caller": "home",
+          "callee": "media",
+          "lineNumber": 14
+        },
+        {
+          "caller": "home",
+          "callee": "button",
+          "lineNumber": 14
+        },
+        {
+          "caller": "home",
+          "callee": "['Productivity','Company Culture','Self-confidence','Self-esteem'].map(t=>`<li><span aria-hidden=\"true\">↑</span>${t}</li>`).join",
+          "lineNumber": 15
+        },
+        {
+          "caller": "home",
+          "callee": "['Productivity','Company Culture','Self-confidence','Self-esteem'].map",
+          "lineNumber": 15
+        },
+        {
+          "caller": "home",
+          "callee": "['Stress','Sick Days','Attrition','Health Insurance Costs'].map(t=>`<li><span aria-hidden=\"true\">↓</span>${t}</li>`).join",
+          "lineNumber": 15
+        },
+        {
+          "caller": "home",
+          "callee": "['Stress','Sick Days','Attrition','Health Insurance Costs'].map",
+          "lineNumber": 15
+        },
+        {
+          "caller": "home",
+          "callee": "benefits.map(tile).join",
+          "lineNumber": 16
+        },
+        {
+          "caller": "home",
+          "callee": "benefits.map",
+          "lineNumber": 16
+        },
+        {
+          "caller": "home",
+          "callee": "support.map(tile).join",
+          "lineNumber": 16
+        },
+        {
+          "caller": "home",
+          "callee": "support.map",
+          "lineNumber": 16
+        },
+        {
+          "caller": "home",
+          "callee": "mediaLogos.map((l,i)=>l.src?`<img src=\"${escape(l.src)}\" alt=\"${escape(l.name)}\" width=\"140\" height=\"65\" loading=\"lazy\">`:partner(l.name,i)).join",
+          "lineNumber": 17
+        },
+        {
+          "caller": "home",
+          "callee": "mediaLogos.map",
+          "lineNumber": 17
+        },
+        {
+          "caller": "home",
+          "callee": "escape",
+          "lineNumber": 17
+        },
+        {
+          "caller": "home",
+          "callee": "escape",
+          "lineNumber": 17
+        },
+        {
+          "caller": "home",
+          "callee": "partner",
+          "lineNumber": 17
+        },
+        {
+          "caller": "home",
+          "callee": "[0,1,2].map((n)=>`<figure class=\"testimonial-row\"><div class=\"portrait-slot\">${testimonials[n]?.src?`<img src=\"${escape(testimonials[n].src)}\" alt=\"\" width=\"100\" height=\"100\">`:`<svg viewBox=\"0 0 80 80\" aria-hidden=\"true\"><circle cx=\"40\" cy=\"26\" r=\"17\"/><path d=\"M9 78a31 31 0 0 1 62 0\"/></svg>`}</div><div><div class=\"stars\" aria-label=\"Rating placeholder\">★★★★★</div><blockquote>${n===2?'Be our next success story?':escape(testimonials[n]?.quote||'Your approved client quotation')}</blockquote><figcaption><strong>${n===2?'You':testimonials[n]?.name||'Client name'}</strong><small>${n===2?'Your company':testimonials[n]?.role||'Role · Company'}</small></figcaption></div></figure>`).join",
+          "lineNumber": 18
+        },
+        {
+          "caller": "home",
+          "callee": "[0,1,2].map",
+          "lineNumber": 18
+        },
+        {
+          "caller": "home",
+          "callee": "escape",
+          "lineNumber": 18
+        },
+        {
+          "caller": "home",
+          "callee": "escape",
+          "lineNumber": 18
+        },
+        {
+          "caller": "home",
+          "callee": "services.slice(1,4).map(s=>`<article><h3>${s.title}</h3><p>${s.description}</p><h4>What you'll get:</h4><ul>${s.items.map(t=>`<li>${t}</li>`).join('')}<li>... and more!</li></ul>${button(`Explore ${s.short}`,`/${s.slug}/`)}</article>`).join",
+          "lineNumber": 19
+        },
+        {
+          "caller": "home",
+          "callee": "services.slice(1,4).map",
+          "lineNumber": 19
+        },
+        {
+          "caller": "home",
+          "callee": "services.slice",
+          "lineNumber": 19
+        },
+        {
+          "caller": "home",
+          "callee": "s.items.map(t=>`<li>${t}</li>`).join",
+          "lineNumber": 19
+        },
+        {
+          "caller": "home",
+          "callee": "s.items.map",
+          "lineNumber": 19
+        },
+        {
+          "caller": "home",
+          "callee": "button",
+          "lineNumber": 19
+        },
+        {
+          "caller": "home",
+          "callee": "[['How much do programs typically cost?','The scope, frequency, location and services determine your proposal. Start with a conversation about your budget and build a program around it.'],['What company sizes do you work with?','Share your headcount when you get in touch. The team can help you choose between an individual activity and a recurring program.'],['Do you deliver on-site, virtual, or both?','Ask about on-site, online and hybrid delivery. The right format depends on the activity and where your people work.'],['Where should our wellness program start?','Begin with the challenge that matters most to your team. Fitness, learning and shared experiences each offer a different starting point.'],['How fast can we get started?','Discuss your preferred date, priorities and location during the consultation so the team can confirm the planning and delivery schedule.']].map(([q,a])=>`<article><h3>${q}</h3><p>${a}</p></article>`).join",
+          "lineNumber": 20
+        },
+        {
+          "caller": "home",
+          "callee": "[['How much do programs typically cost?','The scope, frequency, location and services determine your proposal. Start with a conversation about your budget and build a program around it.'],['What company sizes do you work with?','Share your headcount when you get in touch. The team can help you choose between an individual activity and a recurring program.'],['Do you deliver on-site, virtual, or both?','Ask about on-site, online and hybrid delivery. The right format depends on the activity and where your people work.'],['Where should our wellness program start?','Begin with the challenge that matters most to your team. Fitness, learning and shared experiences each offer a different starting point.'],['How fast can we get started?','Discuss your preferred date, priorities and location during the consultation so the team can confirm the planning and delivery schedule.']].map",
+          "lineNumber": 20
+        },
+        {
+          "caller": "home",
+          "callee": "media",
+          "lineNumber": 21
+        },
+        {
+          "caller": "home",
+          "callee": "contactBand",
+          "lineNumber": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/reference-pages.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "hero",
+          "startLine": 3,
+          "endLine": 3,
+          "params": [
+            "title"
+          ]
+        },
+        {
+          "name": "catalog",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "video",
+          "startLine": 5,
+          "endLine": 5,
+          "params": [
+            "title"
+          ]
+        },
+        {
+          "name": "clients",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        },
+        {
+          "name": "referenceBody",
+          "startLine": 20,
+          "endLine": 30,
+          "params": [
+            "page"
+          ]
+        },
+        {
+          "name": "calculatorPage",
+          "startLine": 31,
+          "endLine": 31,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "referenceBody",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "hero",
+          "callee": "escape",
+          "lineNumber": 3
+        },
+        {
+          "caller": "hero",
+          "callee": "kind.includes",
+          "lineNumber": 3
+        },
+        {
+          "caller": "hero",
+          "callee": "button",
+          "lineNumber": 3
+        },
+        {
+          "caller": "catalog",
+          "callee": "button",
+          "lineNumber": 4
+        },
+        {
+          "caller": "catalog",
+          "callee": "media",
+          "lineNumber": 4
+        },
+        {
+          "caller": "video",
+          "callee": "escape",
+          "lineNumber": 5
+        },
+        {
+          "caller": "video",
+          "callee": "escape",
+          "lineNumber": 5
+        },
+        {
+          "caller": "clients",
+          "callee": "clientLogos.map(l=>`<span class=\"partner-name\">${escape(l.name)}</span>`).join",
+          "lineNumber": 6
+        },
+        {
+          "caller": "clients",
+          "callee": "clientLogos.map",
+          "lineNumber": 6
+        },
+        {
+          "caller": "clients",
+          "callee": "escape",
+          "lineNumber": 6
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "page.path.replaceAll",
+          "lineNumber": 20
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "services.find",
+          "lineNumber": 20
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "escape",
+          "lineNumber": 21
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "button",
+          "lineNumber": 21
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "button",
+          "lineNumber": 21
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "d.sections.map(([h,p,items],i)=>`<section class=\"article-section${i===0?' included-section':''}\"${i===0?' id=\"included\"':''}><div class=\"container\"><h2>${h}</h2><p>${p}</p>${items?`<div class=\"included-grid\">${items.map(t=>`<article><h3>${t}</h3><p>Coordinate this as part of your team's program.</p></article>`).join('')}</div>`:''}</div></section>`).join",
+          "lineNumber": 21
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "d.sections.map",
+          "lineNumber": 21
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "items.map(t=>`<article><h3>${t}</h3><p>Coordinate this as part of your team's program.</p></article>`).join",
+          "lineNumber": 21
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "items.map",
+          "lineNumber": 21
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "[['How do we request a proposal?','Share your headcount, preferred dates, location and goals during the consultation.'],['Can we combine services?','Ask about combining this with other activities in your workplace wellness calendar.'],['What should we prepare?','Bring your requirements and questions so scope, format and scheduling can be discussed.']].map(([q,a])=>`<details><summary>${q}</summary><p>${a}</p></details>`).join",
+          "lineNumber": 21
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "[['How do we request a proposal?','Share your headcount, preferred dates, location and goals during the consultation.'],['Can we combine services?','Ask about combining this with other activities in your workplace wellness calendar.'],['What should we prepare?','Bring your requirements and questions so scope, format and scheduling can be discussed.']].map",
+          "lineNumber": 21
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "button",
+          "lineNumber": 21
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "catalog",
+          "lineNumber": 21
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "contactBand",
+          "lineNumber": 21
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "hero",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "d.sections.map((h,i)=>h.toLowerCase().includes('peek')?video(h):`<section class=\"section ${i%2?'light':'dark'}\"><div class=\"container ${i===0?'split':'reference-service-split'}\"><div><h2>${h}</h2><p>${s.description}</p><ul class=\"check-list\">${s.items.map(t=>`<li>${t}</li>`).join('')}</ul>${button('Discuss this program')}</div>${media(s.media,s.short)}</div></section>`).join",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "d.sections.map",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "h.toLowerCase().includes",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "h.toLowerCase",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "video",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "s.items.map(t=>`<li>${t}</li>`).join",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "s.items.map",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "button",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "media",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "quotes",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "faq",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "catalog",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "contactBand",
+          "lineNumber": 22
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "hero",
+          "lineNumber": 23
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "[['A Passion For Well-Being','Build healthier habits and a stronger sense of connection in the working day.'],['Focus On Results','Shape activities around the things your people need, from movement and learning to time together.'],['Return To The Philippines','Workplace wellness programs for corporate teams across the Philippines.']].map(([h,p],i)=>`<section class=\"section dark about-story\"><div class=\"container split${i%2?' story-reverse':''}\"><div><h2>${h}</h2><p>${p}</p><p>${site.description}</p></div>${media(site.story,'HoliFit story')}</div></section>`).join",
+          "lineNumber": 23
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "[['A Passion For Well-Being','Build healthier habits and a stronger sense of connection in the working day.'],['Focus On Results','Shape activities around the things your people need, from movement and learning to time together.'],['Return To The Philippines','Workplace wellness programs for corporate teams across the Philippines.']].map",
+          "lineNumber": 23
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "media",
+          "lineNumber": 23
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "clients",
+          "lineNumber": 23
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "quotes",
+          "lineNumber": 23
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "catalog",
+          "lineNumber": 23
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "contactBand",
+          "lineNumber": 23
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "hero",
+          "lineNumber": 24
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "[['Audits','Explore workplace wellness assessments.','/resources/audits/'],['Calculators','Try tools for planning and personal fitness.','/free-tools/'],['Downloads','Find guides, reports and program resources.','/resources/downloads/']].map(([h,p,url])=>`<article><h2>${h}</h2><p>${p}</p>${button(`Explore ${h}`,url)}</article>`).join",
+          "lineNumber": 24
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "[['Audits','Explore workplace wellness assessments.','/resources/audits/'],['Calculators','Try tools for planning and personal fitness.','/free-tools/'],['Downloads','Find guides, reports and program resources.','/resources/downloads/']].map",
+          "lineNumber": 24
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "button",
+          "lineNumber": 24
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "catalog",
+          "lineNumber": 24
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "contactBand",
+          "lineNumber": 24
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "hero",
+          "lineNumber": 25
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "clients",
+          "lineNumber": 25
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "video",
+          "lineNumber": 25
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "quotes",
+          "lineNumber": 25
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "video",
+          "lineNumber": 25
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "catalog",
+          "lineNumber": 25
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "contactBand",
+          "lineNumber": 25
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "contactBand().replace",
+          "lineNumber": 26
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "contactBand",
+          "lineNumber": 26
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "faq",
+          "lineNumber": 26
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "form",
+          "lineNumber": 26
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "catalog",
+          "lineNumber": 26
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "['Workplace wellness for teams in the city','Bring purpose to your next company fun run','Planning an active event in Metro Manila','Fun run or sports fest? Find your team’s fit','A practical guide to planning a company run','Building stronger connections at work'].map((t,i)=>`<article>${media(services[i%services.length].media,'Article image')}<h2>${t}</h2><p>Ideas for bringing movement, well-being and shared experiences into your workplace.</p><a href=\"/blog/article-${i+1}/\">Read more →</a></article>`).join",
+          "lineNumber": 27
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "['Workplace wellness for teams in the city','Bring purpose to your next company fun run','Planning an active event in Metro Manila','Fun run or sports fest? Find your team’s fit','A practical guide to planning a company run','Building stronger connections at work'].map",
+          "lineNumber": 27
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "media",
+          "lineNumber": 27
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "catalog",
+          "lineNumber": 27
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "contactBand",
+          "lineNumber": 27
+        },
+        {
+          "caller": "referenceBody",
+          "callee": "calculatorPage",
+          "lineNumber": 28
+        },
+        {
+          "caller": "calculatorPage",
+          "callee": "[['1.2','Sedentary','Mostly seated; little exercise'],['1.375','Lightly Active','Light exercise 1–3 days/week'],['1.55','Moderately Active','Moderate exercise 3–5 days/week'],['1.725','Very Active','Hard exercise 6–7 days/week'],['1.9','Extremely Active','Very active work and training']].map(([v,t,d],i)=>`<label><input type=\"radio\" name=\"activity\" value=\"${v}\"${i===0?' checked':''}><span><strong>${t}</strong><small>${d}</small></span></label>`).join",
+          "lineNumber": 31
+        },
+        {
+          "caller": "calculatorPage",
+          "callee": "[['1.2','Sedentary','Mostly seated; little exercise'],['1.375','Lightly Active','Light exercise 1–3 days/week'],['1.55','Moderately Active','Moderate exercise 3–5 days/week'],['1.725','Very Active','Hard exercise 6–7 days/week'],['1.9','Extremely Active','Very active work and training']].map",
+          "lineNumber": 31
+        },
+        {
+          "caller": "calculatorPage",
+          "callee": "catalog",
+          "lineNumber": 31
+        },
+        {
+          "caller": "calculatorPage",
+          "callee": "contactBand",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    }
+  ]
+}

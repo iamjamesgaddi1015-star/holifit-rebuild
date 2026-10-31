@@ -1,0 +1,68 @@
+[
+  {
+    "order": 1,
+    "title": "Project overview",
+    "description": "Read the reconstruction scope, placeholders and disconnected integrations. HTML is pre-rendered; the Node server is a local preview tool.",
+    "nodeIds": [
+      "document:README.md",
+      "document:UX-CONTRACT.md"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "Shared content model",
+    "description": "All routes derive shared business metadata, services and media from this module. Empty booking/form settings intentionally preserve the disconnected state.",
+    "nodeIds": [
+      "file:src/content.mjs",
+      "document:MEDIA-GUIDE.md"
+    ]
+  },
+  {
+    "order": 3,
+    "title": "Templates and document shell",
+    "description": "Read escaped primitives and shared header/footer before route assembly. The shell consistently attaches styles, app.js and landmarks.",
+    "nodeIds": [
+      "file:src/components.mjs",
+      "file:src/brand.mjs"
+    ]
+  },
+  {
+    "order": 4,
+    "title": "Route rendering",
+    "description": "Follow getPages, homepage rendering and secondary-layout selection. The final HTML uses referenceBody overrides rather than only the initial fallback bodies.",
+    "nodeIds": [
+      "file:src/pages.mjs",
+      "file:src/home.mjs",
+      "file:src/reference-pages.mjs"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "Browser interaction",
+    "description": "The browser script owns disclosure behavior, calculator validation and inquiry preparation. The default form creates a mailto link and sends nothing.",
+    "nodeIds": [
+      "file:public/app.js",
+      "file:public/reference.css",
+      "file:public/styles.css"
+    ]
+  },
+  {
+    "order": 6,
+    "title": "Static build and server",
+    "description": "The build writes directory-index routes and 404.html. The loopback preview imports the build and handles occupied ports without killing other processes.",
+    "nodeIds": [
+      "file:scripts/build.mjs",
+      "file:scripts/server.mjs"
+    ]
+  },
+  {
+    "order": 7,
+    "title": "Checks and remaining work",
+    "description": "Static route/media checks and browser scripts provide different evidence. Original approved media, legal text and enabled integrations remain outside this analysis.",
+    "nodeIds": [
+      "file:scripts/check.mjs",
+      "file:scripts/browser-check.cjs",
+      "document:REVIEW.md"
+    ]
+  }
+]

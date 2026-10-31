@@ -1,0 +1,53 @@
+{
+  "projectRoot": "C:\\Users\\222170\\Documents\\James-Workspace\\04-Personal-Projects\\holifit-rebuild",
+  "batchFiles": [
+    {
+      "path": "src/brand.mjs",
+      "language": "javascript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components.mjs",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/content.mjs",
+      "language": "javascript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/home.mjs",
+      "language": "javascript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/reference-pages.mjs",
+      "language": "javascript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/brand.mjs": [
+      "src/content.mjs"
+    ],
+    "src/components.mjs": [
+      "src/brand.mjs",
+      "src/content.mjs"
+    ],
+    "src/content.mjs": [],
+    "src/home.mjs": [
+      "src/components.mjs",
+      "src/content.mjs"
+    ],
+    "src/reference-pages.mjs": [
+      "src/components.mjs",
+      "src/content.mjs"
+    ]
+  }
+}

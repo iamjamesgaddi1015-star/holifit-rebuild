@@ -1,0 +1,153 @@
+{
+  "nodes": [
+    {
+      "id": "file:scripts/build.mjs",
+      "type": "file",
+      "name": "build.mjs",
+      "filePath": "scripts/build.mjs",
+      "summary": "Copies public assets and writes a directory index HTML file for each route plus a separate 404.html into dist.",
+      "tags": [
+        "code",
+        "javascript",
+        "tooling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/check.mjs",
+      "type": "file",
+      "name": "check.mjs",
+      "filePath": "scripts/check.mjs",
+      "summary": "Asserts unique routes/slugs, one h1 and main landmark, valid internal links/media and the disconnected form endpoint default.",
+      "tags": [
+        "code",
+        "javascript",
+        "verification"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/server.mjs",
+      "type": "file",
+      "name": "server.mjs",
+      "filePath": "scripts/server.mjs",
+      "summary": "Builds before serving dist on loopback port 4173 by default, contains traversal boundaries, serves true 404 responses and handles port collisions.",
+      "tags": [
+        "code",
+        "javascript",
+        "tooling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/pages.mjs",
+      "type": "file",
+      "name": "pages.mjs",
+      "filePath": "src/pages.mjs",
+      "summary": "Builds the full page catalogue from service/content exports, selects reference layouts and wraps each route in the shared HTML shell.",
+      "tags": [
+        "code",
+        "javascript",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/pages.mjs:getPages",
+      "type": "function",
+      "name": "getPages",
+      "filePath": "src/pages.mjs",
+      "lineRange": [
+        7,
+        21
+      ],
+      "summary": "Creates route descriptors, adds service and editorial/resource/legal pages, applies referenceBody and returns complete HTML for each.",
+      "tags": [
+        "javascript",
+        "function",
+        "implementation"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/build.mjs",
+      "target": "file:src/pages.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/check.mjs",
+      "target": "file:src/content.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/check.mjs",
+      "target": "file:src/pages.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/server.mjs",
+      "target": "file:scripts/build.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "file:src/components.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "file:src/content.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "file:src/home.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "file:src/reference-pages.mjs",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "function:src/pages.mjs:getPages",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "function:src/pages.mjs:getPages",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/pages.mjs",
+      "target": "file:scripts/check.mjs",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Static association to a test/check script; does not mean the script was run."
+    }
+  ]
+}

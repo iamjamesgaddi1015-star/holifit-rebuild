@@ -1,0 +1,451 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 4,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "scripts/build.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/check.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 19,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "scripts/server.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 40,
+      "nonEmptyLines": 40,
+      "exports": [
+        {
+          "name": "server",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/pages.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "intro",
+          "startLine": 4,
+          "endLine": 4,
+          "params": [
+            "eyebrow",
+            "title",
+            "description"
+          ]
+        },
+        {
+          "name": "serviceCard",
+          "startLine": 5,
+          "endLine": 5,
+          "params": []
+        },
+        {
+          "name": "getPages",
+          "startLine": 7,
+          "endLine": 21,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getPages",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "intro",
+          "callee": "escape",
+          "lineNumber": 4
+        },
+        {
+          "caller": "intro",
+          "callee": "escape",
+          "lineNumber": 4
+        },
+        {
+          "caller": "intro",
+          "callee": "escape",
+          "lineNumber": 4
+        },
+        {
+          "caller": "intro",
+          "callee": "escape",
+          "lineNumber": 4
+        },
+        {
+          "caller": "serviceCard",
+          "callee": "media",
+          "lineNumber": 5
+        },
+        {
+          "caller": "serviceCard",
+          "callee": "s.short.toLowerCase",
+          "lineNumber": 5
+        },
+        {
+          "caller": "getPages",
+          "callee": "home",
+          "lineNumber": 8
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.push",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getPages",
+          "callee": "intro",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getPages",
+          "callee": "media",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getPages",
+          "callee": "s.items.map(i=>`<li>${i}</li>`).join",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getPages",
+          "callee": "s.items.map",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getPages",
+          "callee": "button",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getPages",
+          "callee": "[['Share your priorities','Tell us about your team, your setting and what you want to achieve.'],['Explore the options','Discuss suitable formats, activities and a practical schedule.'],['Bring your team together','Agree the details and build a shared wellness experience.']].map(([t,d],i)=>`<article><span class=\"step\">0${i+1}</span><h3>${t}</h3><p>${d}</p></article>`).join",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getPages",
+          "callee": "[['Share your priorities','Tell us about your team, your setting and what you want to achieve.'],['Explore the options','Discuss suitable formats, activities and a practical schedule.'],['Bring your team together','Agree the details and build a shared wellness experience.']].map",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getPages",
+          "callee": "faq",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getPages",
+          "callee": "cta",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getPages",
+          "callee": "contactBand",
+          "lineNumber": 9
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.push",
+          "lineNumber": 10
+        },
+        {
+          "caller": "getPages",
+          "callee": "intro",
+          "lineNumber": 10
+        },
+        {
+          "caller": "getPages",
+          "callee": "button",
+          "lineNumber": 10
+        },
+        {
+          "caller": "getPages",
+          "callee": "media",
+          "lineNumber": 10
+        },
+        {
+          "caller": "getPages",
+          "callee": "cta",
+          "lineNumber": 10
+        },
+        {
+          "caller": "getPages",
+          "callee": "contactBand",
+          "lineNumber": 10
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.push",
+          "lineNumber": 11
+        },
+        {
+          "caller": "getPages",
+          "callee": "intro",
+          "lineNumber": 11
+        },
+        {
+          "caller": "getPages",
+          "callee": "quotes",
+          "lineNumber": 11
+        },
+        {
+          "caller": "getPages",
+          "callee": "cta",
+          "lineNumber": 11
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.push",
+          "lineNumber": 12
+        },
+        {
+          "caller": "getPages",
+          "callee": "intro",
+          "lineNumber": 12
+        },
+        {
+          "caller": "getPages",
+          "callee": "'A little knowledge.<br>A healthier workplace.'.replace",
+          "lineNumber": 12
+        },
+        {
+          "caller": "getPages",
+          "callee": "resources.map(r=>`<article class=\"resource-card\"><p class=\"eyebrow\">${r.kind}</p><h2>${r.title}</h2><p>${r.description}</p>${r.href?button('Open resource',r.href):'<p class=\"availability\">Resource link to be added</p>'}</article>`).join",
+          "lineNumber": 12
+        },
+        {
+          "caller": "getPages",
+          "callee": "resources.map",
+          "lineNumber": 12
+        },
+        {
+          "caller": "getPages",
+          "callee": "button",
+          "lineNumber": 12
+        },
+        {
+          "caller": "getPages",
+          "callee": "cta",
+          "lineNumber": 12
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.push",
+          "lineNumber": 13
+        },
+        {
+          "caller": "getPages",
+          "callee": "intro",
+          "lineNumber": 13
+        },
+        {
+          "caller": "getPages",
+          "callee": "button",
+          "lineNumber": 13
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.push",
+          "lineNumber": 14
+        },
+        {
+          "caller": "getPages",
+          "callee": "intro",
+          "lineNumber": 14
+        },
+        {
+          "caller": "getPages",
+          "callee": "button",
+          "lineNumber": 14
+        },
+        {
+          "caller": "getPages",
+          "callee": "cta",
+          "lineNumber": 14
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.push",
+          "lineNumber": 15
+        },
+        {
+          "caller": "getPages",
+          "callee": "intro",
+          "lineNumber": 15
+        },
+        {
+          "caller": "getPages",
+          "callee": "form",
+          "lineNumber": 15
+        },
+        {
+          "caller": "getPages",
+          "callee": "faq",
+          "lineNumber": 15
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.push",
+          "lineNumber": 16
+        },
+        {
+          "caller": "getPages",
+          "callee": "intro",
+          "lineNumber": 16
+        },
+        {
+          "caller": "getPages",
+          "callee": "'Your next step towards<br>a healthier team.'.replace",
+          "lineNumber": 16
+        },
+        {
+          "caller": "getPages",
+          "callee": "button",
+          "lineNumber": 16
+        },
+        {
+          "caller": "getPages",
+          "callee": "button",
+          "lineNumber": 16
+        },
+        {
+          "caller": "getPages",
+          "callee": "button",
+          "lineNumber": 16
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.push",
+          "lineNumber": 17
+        },
+        {
+          "caller": "getPages",
+          "callee": "intro",
+          "lineNumber": 17
+        },
+        {
+          "caller": "getPages",
+          "callee": "button",
+          "lineNumber": 17
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.push",
+          "lineNumber": 18
+        },
+        {
+          "caller": "getPages",
+          "callee": "intro",
+          "lineNumber": 18
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.filter(p=>p.path!=='/404/').map(p=>'<p><a href=\"'+p.path+'\">'+escape(p.title)+'</a></p>').join",
+          "lineNumber": 18
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.filter(p=>p.path!=='/404/').map",
+          "lineNumber": 18
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.filter",
+          "lineNumber": 18
+        },
+        {
+          "caller": "getPages",
+          "callee": "escape",
+          "lineNumber": 18
+        },
+        {
+          "caller": "getPages",
+          "callee": "Array.from",
+          "lineNumber": 19
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.push",
+          "lineNumber": 19
+        },
+        {
+          "caller": "getPages",
+          "callee": "intro",
+          "lineNumber": 19
+        },
+        {
+          "caller": "getPages",
+          "callee": "button",
+          "lineNumber": 19
+        },
+        {
+          "caller": "getPages",
+          "callee": "pages.map",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getPages",
+          "callee": "referenceBody",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getPages",
+          "callee": "shell",
+          "lineNumber": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    }
+  ]
+}
