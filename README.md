@@ -13,7 +13,7 @@ See [MEDIA-GUIDE.md](MEDIA-GUIDE.md) for replacement settings and dimensions.
 Requires Node 22 or later. No package installation is needed for the website.
 
 ```powershell
-cd C:\Users\222170\Documents\James-Workspace\04-Personal-Projects\holifit-rebuild
+cd C:\Users\222170\Documents\James-Workspace\04-Personal-Projects\Projects\holifit-rebuild
 npm run dev
 ```
 
@@ -102,7 +102,7 @@ Start the local server, then run:
 node scripts/browser-check.cjs
 ```
 
-Evidence is written to artifacts/. No external requests or live form submissions are needed.
+New browser evidence is written under workspace `audits/holifit-rebuild/`; old `artifacts/` files remain historical evidence. No external requests or live form submissions are needed for the local browser checks. Reference-capture scripts do visit the public reference site and must be run deliberately.
 
 ## Rollback
 

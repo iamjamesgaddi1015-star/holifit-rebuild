@@ -1,10 +1,10 @@
 const {mkdir,writeFile}=require('node:fs/promises');
 const path=require('node:path');
 let chromium;
-try{({chromium}=require('playwright'));}catch{({chromium}=require('../../playwright-tests/node_modules/playwright'));}
+try{({chromium}=require('playwright'));}catch{({chromium}=require('../../../playwright-tests/node_modules/playwright'));}
 const assert=require('node:assert/strict');
 (async()=>{
- const artifacts=path.resolve(__dirname,'../artifacts');await mkdir(artifacts,{recursive:true});
+ const artifacts=path.resolve(__dirname,'../../../../audits/holifit-rebuild');await mkdir(artifacts,{recursive:true});
  const browser=await chromium.launch({headless:true});
  const errors=[];const failures=[];
  try{
